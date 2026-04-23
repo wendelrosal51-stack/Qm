@@ -1,0 +1,53 @@
+<!doctype html>
+    <head>
+        <title>GPU driver conflicts</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="home.html" class="links">
+                <h1 id="logo">LearNux</h1>
+            </a>
+            <input type="text" id="search" name="search" placeholder="Search for a tutorial">
+            <img src="hamicon.webp" id="hamicon">
+        </div>
+
+        <a href="ubuntu-trouble-homep.html">
+            <img src="back.webp" alt="" id="backbutton" class="links">
+        </a> 
+
+        <p class="troubleTitle"><span style="color: #24Ea24;">Troubleshooting</span></p>
+        <hr>
+        <p class="problemName">NVIDIA/AMD GPU Driver Conflicts</p>
+        <br>
+        <p class="description">Ubuntu ships with open-source display drivers by default, but systems with dedicated NVIDIA or AMD graphics cards frequently experience screen tearing, extremely low resolution locked at 800x600, black screens on boot, or the desktop environment failing to load entirely after a kernel or driver update installs incompatible versions.</p>
+
+        <div class="solution">
+            <p><b><span style="color: red;">1. </span>Boot to Recovery Mode</b></p>
+            <br>
+            <p>If your system shows a black screen or <span style="color: red;">fails</span> to load the desktop, <span style="color: #24Ea24;">Restart</span> and hold <span style="color: blue;">Shift</span> (BIOS) or Esc (UEFI) during boot to open the GRUB menu. </p>
+
+            <div class="guidepics">
+                <img src="shift.gif" id="shift">
+                <img src="plus.png" alt="" id="plus">
+                <img src="resetpc.png" alt="" id="resetpc">    
+            </div>
+            <p><b><span style="color: red;">2.</span> GRUB menu</b></p>
+            <br>
+            <p>In the GRUB menu, select <span style="color: #24Ea24;">"Advanced options for Ubuntu"</span>, and enter "<span style="color: #24ea24;">Recovery Mode</span>".</p>
+
+            <div class="guidepics">
+                <img src="grubmenu.webp" style="width:400px;">
+                <img src="arrow.png" alt="" style="width: 200px; height:auto">
+                <img src="recovery.webp" alt="" style="width: 400px;">
+            </div>
+
+            <p><b><span style="color: red;">3.</span> Open the Root shell terminal</b></p>
+            <p>The recovery menu will appear with several options. Use your arrow keys to scroll down and highlight root — Drop to root shell prompt then press Enter. This opens a terminal where you can type commands.</p>
+            <div class="guidepics">
+                <img src="root.webp" alt="" style="width: 600px; height:auto">
+            </div>
+        </div>
+    </body>
+</html>
