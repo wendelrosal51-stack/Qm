@@ -46,7 +46,8 @@ div.header{
     background-position: center;
     height: 90vh;
     width: 98vw;
-    margin: 20px auto;
+    margin-left: 1%;
+    margin-top: 1%;
     border-radius: 10px;
     padding: 30px;
 }
@@ -72,7 +73,6 @@ div.header{
     border-radius: 10px;
     padding: 45px;
     font-size: 50px;
-    margin-bottom: 20px;
     margin-top: auto;
     position: absolute;
     right: 70px;
