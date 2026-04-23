@@ -167,9 +167,10 @@ div.header{
 
 .distro-tutorials-cards{
     display: flex;
-    gap: 165px;              
-    margin-top: 30px;       
-    margin-left: 19%;        
+    align-content: center;
+    justify-content: center;
+    gap: 18%;              
+    margin-top: 5%;       
     padding: 10px;
 }
 .tutorial-card{
@@ -196,8 +197,7 @@ div.header{
 .row2{
     display: flex;
     gap: 165px;              
-    margin-top: 30px;       
-    margin-left: 30%;        
+    margin-top: 6%;            
     padding: 10px;   
 }
 
