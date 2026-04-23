@@ -44,8 +44,8 @@ div.header{
     flex-direction: column;
     background-color: #f3c4a2;
     background-position: center;
-    height: 90vh;
-    width: 98vw;
+    height: 90%;
+    width: 98%;
     margin-left: 1%;
     margin-top: 1%;
     border-radius: 10px;
