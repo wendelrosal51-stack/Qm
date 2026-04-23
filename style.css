@@ -164,7 +164,9 @@ div.header{
     font-size: 50px;
     font-weight: bold;
 }
-
+.distro-tutorials-page{
+    max-height: fit-content;
+}
 .distro-tutorials-cards{
     display: flex;
     align-content: center;
