@@ -101,9 +101,9 @@ div.header{
 
 .distro-container{
     display: flex;
+    justify-content: center;
     gap: 17vw;              
     margin-top: 8vw;       
-    margin-left: 14vw;        
     padding: 10px;
 }
 
