@@ -1,0 +1,53 @@
+#let{
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#select{
+    font-weight: 50;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.distro-container{
+    display: flex;
+    justify-content: center;
+    gap: 14vw;              
+    margin-top: 8vw;       
+    padding: 10px;
+}
+
+.distro-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    width: 370px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.distro-card img{
+    padding: 2%;
+    width: 240px;
+    align-self: center;
+    object-fit: cover;
+}
+
+.ubuntu{
+    background-color: #f3c4a2;
+}
+.mint{
+    background-color: #a9e39d;
+}
+
+.fedora{
+    background-color: #9ecbf5;
+}
+
+
