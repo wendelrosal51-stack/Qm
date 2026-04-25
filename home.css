@@ -50,4 +50,10 @@
     background-color: #9ecbf5;
 }
 
-
+@media (max-width:1024px) {
+    .distro-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+    }
+}
