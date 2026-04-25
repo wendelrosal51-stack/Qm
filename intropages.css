@@ -1,0 +1,40 @@
+.content-box{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3c4a2;
+    background-position: center;
+    height: 90%;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.overview{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 1.6vw;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.learning{
+    margin-top: 6%;
+    font-size: 1.9vw;
+}
+
+.beginButton{
+    align-self: flex-end;
+    background-color: #24Ea24;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 45px;
+    font-size: 50px;
+    margin-top: auto;
+    position: absolute;
+    right: 70px;
+    bottom: 30px;
+}
