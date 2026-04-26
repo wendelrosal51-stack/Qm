@@ -1,0 +1,43 @@
+
+.problem-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+}
+
+.problemName{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 20px;
+    margin-right: 60px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.solution{
+    font-size: 20px;
+    line-height: 1.5;
+    width: 90%;
+}
+
+.guidepics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+    gap: 90px;
+}
+
+.guidepics img{
+    width: 200px;
+}

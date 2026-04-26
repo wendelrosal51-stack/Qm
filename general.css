@@ -5,12 +5,19 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  body{
+    padding-top: 70px;
+  }
+
+  /* header */
   div.header{
+    position: fixed;
     background-color:#666060;
     width: 100%;
     display: flex;
     align-items: center;
-    position: relative;
+    top: 0;
+    z-index: 100;
 }
 
 #logo{
@@ -20,7 +27,7 @@
 }
 
 #search{
-    background-image: url(search.png);
+    background-image: url(assets/search.png);
     background-repeat: no-repeat;
     background-size: 50px 50px;
     background-position: 4px;
@@ -50,3 +57,19 @@
   width: fit-content;
   height: fit-content;
 }
+
+#backbutton{
+  position: fixed;
+  width: 60px;
+  height: 40px;
+  margin-top: 5px;
+  padding-left: 1%;
+}
+
+hr{
+  color: #24Ea24;
+  border-top: 1px solid #24Ea24;
+  width: 600px;
+  margin: 2px auto;
+}
+
