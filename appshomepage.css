@@ -1,0 +1,36 @@
+.app-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px 250px;
+    width: 100%;
+    height: fit-content;
+}
+
+.app-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 25px;
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: solid black;
+    margin-top: 50px;
+}
+
+.app-container p{
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.app-card img{
+    width: 80%;
+    height: 125px;
+    object-fit: contain;
+}

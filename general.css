@@ -73,3 +73,11 @@ hr{
   margin: 2px auto;
 }
 
+.troubleTitle{
+  text-align:center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #24Ea24;
+}
+

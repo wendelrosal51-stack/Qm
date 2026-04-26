@@ -1,64 +1,71 @@
 <!doctype html>
-    <head>
-        <title>Recommended Apps</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html>
+  <head>
+    <title>Recommended Apps</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="appshomepage.css" />
+  </head>
 
-    <body>
-        <div class="header">
-            <a href="home.html" class="links">
-                <h1 id="logo">LearNux</h1>
-            </a>
-            <input type="text" id="search" name="search" placeholder="Search for a tutorial">
-            <img src="hamicon.webp" id="hamicon">
+  <body>
+    <div class="header">
+      <a href="home.html" class="links">
+        <h1 id="logo">LearNux</h1>
+      </a>
+      <input type="text" id="search" name="search" placeholder="Search for a tutorial" />
+      <img src="assets/hamicon.webp" id="hamicon" />
+    </div>
+
+    <a href="ubuntu.html">
+      <img src="assets/back.webp" alt="" id="backbutton" class="links" />
+    </a>
+
+    <p class="troubleTitle"><span style="color: #24ea24">Recommended Apps</span></p>
+    <hr />
+
+    <div class="app-container">
+      <a href="ubuntu-apps-vscode.html" class="links">
+        <div class="app-card">
+            <img src="assets/vscode.png" alt="">
+          <p>VS Code</p>
         </div>
+      </a>
 
-        <a href="ubuntu.html">
-            <img src="back.webp" alt="" id="backbutton" class="links">
-        </a> 
-
-        <p class="troubleTitle"><span style="color: #24Ea24;">Recommended Apps</span></p>
-        <hr>
-
-        <div class="app-container">
-            <a href="ubuntu-apps-vscode.html" class="links">
-                <div class="app-card vscode">
-                    <p>VS Code</p>
-                </div>
-            </a>
-
-            <a href="" class="links">
-                <div class="app-card vlc">
-                    <p style="font-size: 23px;">VLC Media Player</p>
-                </div>
-            </a>
-
-            <a href="" class="links">
-                <div class="app-card gimp">
-                    <p>Gimp</p>
-                </div>
-            </a>
+      <a href="" class="links">
+        <div class="app-card">
+            <img src="assets/vlc.png" alt="">
+          <p style="font-size: 20px;">VLC Media Player</p>
         </div>
+      </a>
 
-        <div class="app-container">
-            <a href="" class="links">
-                <div class="app-card libre">
-                    <p>Libre Office</p>
-                </div>
-            </a>
-
-            <a href="" class="links">
-                <div class="app-card time">
-                    <p>Time Shift</p>
-                </div>
-            </a>
-
-            <a href="" class="links">
-                <div class="app-card kden">
-                    <p>KdenLive</p>
-                </div>
-            </a>
+      <a href="" class="links">
+        <div class="app-card">
+            <img src="assets/gimp.png" alt="">
+          <p>Gimp</p>
         </div>
+      </a>
 
-    </body>
+      <a href="" class="links">
+        <div class="app-card">
+            <img src="assets/libre.png" alt="">
+          <p>Libre Office</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- <div class="app-container">
+      
+
+      <a href="" class="links">
+        <div class="app-card time">
+          <p>Time Shift</p>
+        </div>
+      </a>
+
+      <a href="" class="links">
+        <div class="app-card kden">
+          <p>KdenLive</p>
+        </div>
+      </a> -->
+    </div>
+  </body>
 </html>
