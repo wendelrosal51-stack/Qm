@@ -1,5 +1,5 @@
 .content-box{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     flex-direction: column;
     background-color: #f3c4a2;
@@ -9,7 +9,12 @@
     margin-left: 1%;
     margin-top: 1%;
     border-radius: 10px;
-    padding: 30px;
+    /* padding: 30px; */
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
 }
 
 .overview{
@@ -21,11 +26,28 @@
 }
 
 .learning{
-    margin-top: 6%;
-    font-size: 1.9vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    font-size: 2.5rem;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.learning ul{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.learning-left{
+    display: flex;
+    flex-direction: column;
 }
 
 .beginButton{
+    flex-shrink: 0;
     align-self: flex-end;
     background-color: #24Ea24;
     width: 350px;
@@ -33,8 +55,6 @@
     border-radius: 10px;
     padding: 45px;
     font-size: 50px;
-    margin-top: auto;
-    position: absolute;
-    right: 70px;
-    bottom: 30px;
+    margin-top: 50%;
+    /* bottom: 30px; */
 }
