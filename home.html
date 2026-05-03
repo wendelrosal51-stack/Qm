@@ -1,45 +1,99 @@
 <!doctype html>
-    <head>
-        <title>LearNux</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <link rel="stylesheet" href="general.css">
-        <link rel="stylesheet" href="home.css">
-    </head>
-
-    <body>
-        <div class="header">
-            <a href="home.html" class="links">
-                <h1 id="logo">LearNux</h1>
-            </a>
-            <input type="text" id="search" name="search" placeholder="Search for a tutorial">
-            <img src="assets/hamicon.webp" id="hamicon">
-        </div>
-
-        <p id="let">Let's get you started!</p>
-        <p id="select">Select a Linux Distribution</p>
-        
-
-        <div class="distro-container">
-            <a href="ubuntu-intro.html" class="links">
-                <div class="distro-card ubuntu">
-                    <img src="assets/ubuntu.png" alt="">
-                    <p>Linux Ubuntu</p>
-                </div>
-            </a>
-
-            <a href="mint.html" class="links">
-                <div class="distro-card mint">
-                    <img src="assets/mint.png" alt="">
-                    <p>Linux Mint</p>
-                </div>
-            </a>
-
-            <a href="fedora.html" class="links">
-                <div class="distro-card fedora">
-                    <img src="assets/fedora.png" alt="">
-                    <p>Linux Fedora</p>
-                </div>
-            </a>
-        </div>
-    </body>
 <html>
+  <head>
+    <title>LearNux</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="home.html" class="links">
+        <h1 id="logo">LearNux</h1>
+      </a>
+      <input type="text" id="search" name="search" placeholder="Search for a tutorial" />
+      <img src="assets/hamicon.webp" id="hamicon" />
+    </div>
+
+    <div class="hero">
+      <img src="assets/logo.png" alt="" />
+      <h1 id="learn">Learn Linux</h1>
+      <h2>Decode the Kernel. Master the Distro.</h2>
+    </div>
+
+    <div class="about">
+      <div class="left">
+        <p>Why Learn with Us?</p>
+      </div>
+
+      <div class="right">
+        <p>
+          <span style="color: #24ea24">LearNux</span>
+          isn't just another collection of scattered tutorials it's a complete learning ecosystem built to take you from Linux newcomer to confident user. Our platform organizes everything you need into clear, progressive pathways that build on each other, ensuring you develop genuine competency rather than just memorizing commands.
+        </p>
+      </div>
+    </div>
+
+    <div class="tutorial-container">
+      <div class="tutorial">
+        <p style="color: #24ea24">Installation Tutorials</p>
+        <p>From creating bootable USB drives to dual-boot configurations and virtual machine setups, we guide you through every installation scenario with confidence-building clarity.</p>
+      </div>
+
+      <div class="tutorial">
+        <p style="color: #24ea24">Features Tutorials</p>
+        <p>Unlock the full potential of Ubuntu's desktop environment, learn to customize your workspace, manage files efficiently, and navigate the system like a pro.</p>
+      </div>
+
+      <div class="tutorial">
+        <p style="color: #24ea24">Commands Tutorials</p>
+        <p>Master the terminal with our progressive command-line guides that start with the basics (cd, ls, mkdir) and advance to powerful tools like grep, awk, sed, and shell scripting.</p>
+      </div>
+
+      <div class="tutorial">
+        <p style="color: #24ea24">Troubleshooting Tutorials</p>
+        <p>Our comprehensive troubleshooting guides help you diagnose and resolve common (and uncommon) issues, from graphics driver conflicts to network connectivity problems and package management errors.</p>
+      </div>
+
+      <div class="tutorial">
+        <p style="color: #24ea24">Recommended Tutorials</p>
+        <p>Discover and install the best software for your needs. We don't just list apps, we show you how to install them, configure them, and use their key features to maximize productivity, creativity, and system performance.</p>
+      </div>
+
+      <div class="tutorial">
+        <p style="color: #24ea24">Assessment Quizzes</p>
+        <p>These quizzes don't just check if you memorized steps, they ensure you understand why those steps matter and when to apply them. Your quiz scores are saved to your account, allowing you to track improvement over time and revisit topics as needed.</p>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="start">
+      <p id="let">Let's get you started!</p>
+      <p id="select">Select a Linux Distribution</p>
+
+      <div class="distro-container">
+        <a href="ubuntu-intro.html" class="links">
+          <div class="distro-card ubuntu">
+            <img src="assets/ubuntu.png" alt="" />
+            <p>Linux Ubuntu</p>
+          </div>
+        </a>
+
+        <a href="mint.html" class="links">
+          <div class="distro-card mint">
+            <img src="assets/mint.png" alt="" />
+            <p>Linux Mint</p>
+          </div>
+        </a>
+
+        <a href="fedora.html" class="links">
+          <div class="distro-card fedora">
+            <img src="assets/fedora.png" alt="" />
+            <p>Linux Fedora</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

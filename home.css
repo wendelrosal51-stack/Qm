@@ -1,8 +1,94 @@
+body{
+    padding-top: 66px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #666060;
+    width: 100%;
+    height: 30rem;
+    gap: 10px;
+}
+
+#learn{
+    font-size: 4.3rem;
+    color: #24Ea24;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+}
+
+h2{
+    font-size: 2.3rem;
+    color: #ffffff;
+    font-weight: 100;
+    margin-top: 1%;
+    letter-spacing: 0.5rem;
+}
+
+.hero img {
+    width: 10rem;
+    margin-top: 2%;
+}
+
+.about{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 17rem;
+    gap: 13px;
+}
+
+.left{
+    width: 50rem;
+    height: 20rem;
+    font-size: 5rem;
+    color: #24Ea24;
+    text-align: center;
+    font-weight: 700;
+}
+
+.right{
+    width: 100rem;
+    height: 20rem;
+    font-size: 1.47rem;
+    line-height: 1.7;
+    text-align: justify;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.tutorial-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 3rem;
+    flex-wrap: wrap;
+    gap:  80px 280px;
+    
+}
+
+.start{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding-top: 20px;
+}
+
+.tutorial{
+    width: 30%;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
 #let{
     font-size: 70px;
     font-weight: bold;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #select{
@@ -17,7 +103,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 100px;              
-    margin-top: 8vw;       
+    margin-top: 5vw;       
     padding: 10px;
 }
 
@@ -32,6 +118,8 @@
     font-size: 2.5rem;
     font-weight: 100;
     border: solid black;
+    box-shadow: 0 10px 10px rgba(12, 12, 12, 0.873);
+
 }
 
 .distro-card img{
