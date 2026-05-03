@@ -2,76 +2,6 @@
 
 
 
-
-/* Troubleshooting */
-
-
-/* Specific Problem */
-
-/* 
-.solution img {
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 20%;
-    height: 20%;
-} */
-
-
-
-/* Apps */
-
-.app-container{
-    display: flex;
-    gap: 330px;              
-    margin-top: 30px;       
-    margin-left: 70px;
-    margin-bottom: 150px;
-    padding: 10px;
-}
-
-.app-card{
-    display: flex;
-    background-color: #f3c4a2;
-    background-size: 150px 120px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: 25px 25px;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    align-items: flex-end;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-.app-container p{
-    font-size: 30px;
-    margin-bottom: 7px;
-}
-
-.vscode{
-    background-image: url(vscode.png);
-}
-
-.vlc{
-    background-image: url(vlc.png);
-}
-
-.gimp{
-    background-image: url(gimp.png);
-}
-.libre{
-    background-image: url(libre.png);
-}
-
-.time{
-    background-image: url(timeshift.png);
-}
-
-.kden{
-    background-image: url(kden.png);
-}
-
 .app-description{
     display: flex;
     flex-direction: column;
@@ -108,60 +38,7 @@
 }
 
 /* Login Page */
-.leftSide{
-    position: absolute;
-    top: 42%;
-    left: 9%;
-    font-size: 130px;
-}
 
-.rightSide{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8%;
-    position:absolute;
-    width: 50%;
-    height: 100%;
-    right: 0px;
-    background-color: #666060;
-}
-
-.rightSide img{
-    margin-top: 15%;
-    width: 20%;
-    height: 17%;
-    align-self: center;
-}
-
-input{
-    width: 50%;
-    height: 5%;
-    border-radius: 10px;
-    padding-left: 20px;
-    font-size: 100%;
-    border: 2px solid black;
-}
-
-.loginpage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid black;
-    font-size: 25px;
-}
-
-.log{
-    background-color: #24Ea24;
-}
-
-.sign{
-    background-color: white;
-}
 
 
 
