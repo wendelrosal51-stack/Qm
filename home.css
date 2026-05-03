@@ -37,7 +37,7 @@ h2{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 17rem;
+    height: 13rem;
     gap: 13px;
 }
 
@@ -60,12 +60,20 @@ h2{
     padding-right: 30px;
 }
 
+hr{
+    color: #24Ea24;
+    border-top: 1px solid #24Ea24;
+    width: 70rem;
+    margin-top: 4rem;
+}
+
 .tutorial-container{
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-left: 3rem;
+    margin-top: 4rem;
     flex-wrap: wrap;
     gap:  80px 280px;
     
@@ -81,7 +89,7 @@ h2{
     width: 30%;
     line-height: 1.5;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: start;
 }
 
 #let{
