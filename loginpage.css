@@ -38,8 +38,8 @@ body{
     align-items: center;
     background-color: #EDE8E8;
     width: 90%;
-    height: 36rem;
-    gap: 70px;
+    height: fit-content;
+    gap: 50px;
     border-radius: 10px;
 }
 
