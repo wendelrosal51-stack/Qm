@@ -18,23 +18,31 @@
       </div>
 
       <div class="rightSide">
-        <img src="assets/profile.png" alt="" />
-        <p style="font-size: 20px; color: #24ea24; font-weight: 50">take your first step...</p>
-        <input type="text" placeholder="User Name" />
-        <input type="password" placeholder="Password" />
+        <img id="peng" src="assets/logo.png" alt="" />
 
-        <a href="home.html" class="links">
-          <div class="loginpage log">
-            <p>Log In</p>
+        <form action="home.html" class="input-section">
+          <p style="font-size: 2rem; color: #24ea24; font-weight: 500; margin-top: 20px">Welcome Back!</p>
+            
+          <div id="loginfields">
+            <input type="text" placeholder="Enter username or E-mail" id="login-username" required />
+            <input type="password" placeholder="Password" id="login-password" required />
           </div>
-        </a>
+          
+          <div id="signupfields" style="display: none;">
+            <input type="text" placeholder="Enter username or E-mail" id="signup-username" required />
+            <input type="password" placeholder="Password" id="signup-password" required />
+            <input type="password" placeholder="Confirm Password" id="confpassword" required />
+          </div>
 
-        <a href="" class="links">
-          <div class="loginpage sign">
-            <p>Sign Up</p>
-          </div>
-        </a>
+          <button type="submit" class="login-button" id="log">Log In</button>
+
+          <p id="askuser">
+            Don't have an account? Join us and <span style="color: #24ea24"><a href="" class="links" id="toggle">Sign Up</a></span>!
+          </p>
+        </form>
+        </div>
       </div>
     </div>
+    <script src="loginpage.js"></script>
   </body>
 </html>
