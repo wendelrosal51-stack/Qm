@@ -1,0 +1,96 @@
+body{
+    padding-top: 0;
+}
+
+.signup-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    font-size: 8rem;
+    justify-content: center;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    /* position:relative; */
+    width: 50%;
+    background-color: #666060;
+}
+#peng{
+    margin-top: 5%;
+    width: 8rem;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EDE8E8;
+    width: 90%;
+    height: fit-content;
+    gap: 40px;
+    border-radius: 10px;
+}
+
+input{
+    width: 80%;
+    height: 3rem;
+    font-size: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    padding-left: 55px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#signup-username{
+    background-image: url(assets/profile.white.png);
+}
+
+#signup-password{
+    background-image: url(assets/lock.png);
+}
+#confpassword{
+    background-image: url(assets/confirmpass.png);
+}
+
+
+.sign-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 25px;
+    background-color: #66ff66;
+    transition: background-color 0.25s;
+}
+
+.sign-button:hover{
+    background-color: #24Ea24;
+}
+
+#toggle{
+    margin-bottom: 2px;
+}
+
+
+@media screen {
+    
+}
