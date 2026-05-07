@@ -76,7 +76,6 @@ hr{
     margin-top: 4rem;
     flex-wrap: wrap;
     gap:  80px 280px;
-    
 }
 
 .start{
@@ -127,7 +126,6 @@ hr{
     font-weight: 100;
     border: solid black;
     box-shadow: 0 10px 10px rgba(12, 12, 12, 0.873);
-
 }
 
 .distro-card img{
@@ -140,6 +138,7 @@ hr{
 .ubuntu{
     background-color: #f3c4a2;
 }
+
 .mint{
     background-color: #a9e39d;
 }
@@ -152,6 +151,5 @@ hr{
     .distro-container{
         flex-direction: row;
         gap: 2vw;
-
     }
 }

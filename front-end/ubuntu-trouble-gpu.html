@@ -8,13 +8,45 @@
     </head>
 
     <body>
-        <div class="header">
+        <nav class="navbar">
+            <div class="nav-left-group">
+              <a href="home.html" class="brand-link">
+                <div class="nav-left">
+                  <img src="assets/logo.png" alt="LearNux Logo" class="nav-logo" />
+                  <span class="nav-brand">LearNux</span>
+                </div>
+              </a>
+          
+              <ul class="nav-links">
+                <li><a href="home.html" class="nav-link ">Home</a></li>
+                <li><a href="ubuntu.html" class="nav-link active">Ubuntu</a></li>
+                <li><a href="mint.html" class="nav-link">Mint</a></li>
+                <li><a href="fedora.html" class="nav-link">Fedora</a></li>
+                <li><a href="overview.html" class="nav-link">Overview</a></li>
+              </ul>
+            </div>
+          
+            <div class="nav-right">
+              <div class="profile-section" id="profileSection">
+                <img src="assets/profile.png" alt="Profile" class="profile-icon" id="profileIcon" />
+                <span class="username" id="usernameDisplay">Guest</span>
+          
+                <div class="profile-dropdown" id="profileDropdown">
+                  <a href="#" id="viewProfile">View Profile</a>
+                  <a href="#" id="settings">Settings</a>
+                  <a href="#" id="logoutBtn">Logout</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+      
+          <!-- <div class="header">
             <a href="home.html" class="links">
-                <h1 id="logo">LearNux</h1>
+              <h1 id="logo">LearNux</h1>
             </a>
-            <input type="text" id="search" name="search" placeholder="Search for a tutorial">
-            <img src="assets/hamicon.webp" id="hamicon">
-        </div>
+            <input type="text" id="search" name="search" placeholder="Search for a tutorial" />
+            <img src="assets/hamicon.webp" id="hamicon" />
+          </div> -->
 
         <a href="ubuntu-trouble-homep.html">
             <img src="assets/back.webp" alt="" id="backbutton" class="links">
@@ -60,4 +92,5 @@
             </div>
         </div>
     </body>
+    <script src="home.js"></script>
 </html>
