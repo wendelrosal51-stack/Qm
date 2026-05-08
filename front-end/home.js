@@ -17,7 +17,6 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-// Toggle dropdown menu
 const profileSection = document.getElementById('profileSection');
 const profileDropdown = document.getElementById('profileDropdown');
 
@@ -26,12 +25,10 @@ profileSection.addEventListener('click', (e) => {
     profileDropdown.classList.toggle('show');
 });
 
-// Close dropdown when clicking outside
 document.addEventListener('click', () => {
     profileDropdown.classList.remove('show');
 });
 
-// Logout functionality
 document.getElementById('logoutBtn').addEventListener('click', async (e) => {
     e.preventDefault();
     
@@ -50,13 +47,11 @@ document.getElementById('logoutBtn').addEventListener('click', async (e) => {
     }
 });
 
-// View Profile (placeholder)
 document.getElementById('viewProfile').addEventListener('click', (e) => {
     e.preventDefault();
     window.alert('Profile page coming soon!');
 });
 
-// Settings (placeholder)
 document.getElementById('settings').addEventListener('click', (e) => {
     e.preventDefault();
     window.alert('Settings page coming soon!');
