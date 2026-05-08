@@ -1,14 +1,11 @@
-// Check if user is logged in when page loads
 window.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch('/api/user');
         const data = await response.json();
         
         if (data.loggedIn) {
-            // Update username display
             document.getElementById('usernameDisplay').textContent = data.username;
         } else {
-            // Redirect to login if not logged in
             window.location.href = '/';
         }
     } catch (error) {
