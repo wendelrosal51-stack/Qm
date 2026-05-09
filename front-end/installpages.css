@@ -2,20 +2,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
-    text-align: center;
+    gap:50px;
+    text-align: justify;
+    width: 100%;
     font-size: 20px;
 }
 
-video{
-    width: 600px;
+video {
+    width: 800px;
+    
+}
+
+img{
+    width: 800px;
 }
 
 .contents p{
     margin-top: 5px;
     margin-bottom: 10px;
 }
-
 
 .step{
     text-align: center;
@@ -25,10 +30,12 @@ video{
 }
 
 .steps{
-    margin-bottom: 70px;
-    max-width: 600px;
+    margin-bottom: 35px;
+    max-width: 50rem;
 }
-
+ul , li{
+    line-height: 2;
+}
 hr{
     color: #24Ea24;
     border-top: 1px solid #24Ea24;
@@ -39,17 +46,17 @@ hr{
 .navigation{
     display: flex;
     flex-direction: row;
-    gap: 350px;
+    gap: 34rem;
 }
 
 .proceed{
-    margin-top: 20px;    
+    margin-top: 1rem;    
     margin-bottom: 10%;
     width: 130px;
 }
 
 .previous{
     display: block;
-    margin-top: 20px;
+    margin-top: 1rem;
     width: 130px;
 }
