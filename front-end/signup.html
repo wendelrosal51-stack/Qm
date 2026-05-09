@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>LearNux</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+
+  <body>
+    <div class="signup-container">
+      <div class="leftSide">
+        <p style="color: #24ea24; font-weight: bold">LearNux</p>
+        <p style="font-size: 30px">
+          <span style="margin-left: 10px; margin-right: 100px">Learn.</span>
+          <span style="margin-right: 100px">Explore.</span>
+          Master.
+        </p>
+      </div>
+
+      <div class="rightSide">
+        <img id="peng" src="assets/logo.png" alt="" />
+
+        <form action="login.html" class="input-section">
+          <p style="font-size: 2rem; color: #24ea24; font-weight: 500; margin-top: 20px">Create your account</p>
+
+          <input type="text" placeholder="Enter username or E-mail" id="signup-username" required />
+          <input type="password" placeholder="Password" id="signup-password" required />
+          <input type="password" placeholder="Confirm Password" id="confpassword" required />
+
+          <button type="submit" class="sign-button" id="sign">Sign Up</button>
+
+          <p id="askuser">
+            Already have an account?
+            <span style="color: #24ea24">
+              <a href="login.html" class="links" id="toggle">Log In</a>
+            </span>
+            !
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="signuppage.js"></script>
+  </body>
+</html>
