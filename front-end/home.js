@@ -1,11 +1,14 @@
+// Check if user is logged in when page loads
 window.addEventListener('DOMContentLoaded', async () => {
     try {
         const response = await fetch('/api/user');
         const data = await response.json();
         
         if (data.loggedIn) {
+            // Update username display
             document.getElementById('usernameDisplay').textContent = data.username;
         } else {
+            // Redirect to login if not logged in
             window.location.href = '/';
         }
     } catch (error) {
@@ -14,6 +17,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
+// Toggle dropdown menu
 const profileSection = document.getElementById('profileSection');
 const profileDropdown = document.getElementById('profileDropdown');
 
@@ -22,10 +26,12 @@ profileSection.addEventListener('click', (e) => {
     profileDropdown.classList.toggle('show');
 });
 
+// Close dropdown when clicking outside
 document.addEventListener('click', () => {
     profileDropdown.classList.remove('show');
 });
 
+// Logout functionality
 document.getElementById('logoutBtn').addEventListener('click', async (e) => {
     e.preventDefault();
     
@@ -46,9 +52,10 @@ document.getElementById('logoutBtn').addEventListener('click', async (e) => {
 
 document.getElementById('viewProfile').addEventListener('click', (e) => {
     e.preventDefault();
-    window.alert('Profile page coming soon!');
+    window.location.href = '/profile.html';
 });
 
+// Settings (placeholder)
 document.getElementById('settings').addEventListener('click', (e) => {
     e.preventDefault();
     window.alert('Settings page coming soon!');

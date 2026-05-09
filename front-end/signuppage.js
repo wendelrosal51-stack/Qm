@@ -28,18 +28,6 @@ submitBtn.onclick = async function(e){
     else if(signpass !== signconf){
         window.alert(`Confirmation Password does not match! Please try again`);
         return;
-    } 
-    else if(signuser.includes(" ") || signpass.includes(" ")){
-        window.alert(`Username and Password cannot contain spaces!`)
-        return;
-    }
-    else if(signuser.length<5){
-        window.alert(`User name / E-mail cannot be less than 5 characters! `);
-        return;
-    } 
-    else if (signpass.length<6){
-        window.alert(`Please select a stronger password!`);
-        return;
     }
     else {
         try {
