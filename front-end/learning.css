@@ -37,6 +37,11 @@ body {
 .back-link,
 .secondary-button {
   background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover{
+  background-color: #24ea24;
 }
 
 .primary-button,
@@ -99,16 +104,20 @@ body {
 .story-copy span {
   color: #168516;
   display: block;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
+
 }
 
-.story-copy p,
 .question-card p,
 .profile-card p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.story-copy p {
+  font-size: 1.7rem;
 }
 
 .story-media {
@@ -143,6 +152,21 @@ body {
   gap: 12px;
   justify-content: flex-end;
   margin-top: 22px;
+}
+
+#completeLesson , #quizLink , #previousLesson , #nextLesson{
+  transition: all 0.5s ease;
+}
+#completeLesson:hover, #quizLink:hover, #previousLesson:hover, #nextLesson:hover{
+  transform: translateY(-2px);
+}
+
+.secondary-button:disabled {
+  background: #c0c0c0;
+  border-color: #a0a0a0;
+  color: #6b6b6b;
+  cursor: not-allowed;
+  /* opacity: 0.6; */
 }
 
 .question-card label {

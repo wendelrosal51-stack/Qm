@@ -123,9 +123,14 @@ hr{
     text-align: center;
     border-radius: 10px;
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 200;
     border: solid black;
-    box-shadow: 0 10px 10px rgba(12, 12, 12, 0.873);
+    box-shadow: 0 10px 10px rgba(12, 12, 12, 0.873);  
+    transition: all 0.5s ease;
+}
+
+.distro-card:hover{
+    transform: translateY(-10px);
 }
 
 .distro-card img{

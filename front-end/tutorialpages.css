@@ -15,33 +15,64 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  max-width: 70%;
-  gap: 30px 200px;              
+  max-width: 100%;
+  gap: 150px 150px;              
+  margin-top: 30px;
+}
+
+#vertical {
+  width: 1%;
+  background: black;
+  border: none;
+  margin: 0;
+  align-self: stretch;  
 }
 
 .tutorial-card{
   display: flex;
-  align-items: flex-end;  
-  justify-content: center;
-  background-color: #f3c4a2;
-  background-size: 130px 130px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 20px;
-  width: 180px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #f7f7f2;
+  width: 500px;
   height: 170px;
   text-align: center;
   border-radius: 10px;
-  margin-top: 25px;
   border: solid black;
+  box-shadow: 0 10px 10px rgba(12, 12, 12, 0.5);
+  margin-bottom: 19px;
+  transition: all 0.5s ease;
 }
 
-.tutorial-card p{
-  font-size: 23px;
+.tutorial-card:hover {
+  transform: translateY(-5px);
+  background-color: #24ea246f;
+}
+
+.tutorial-card img{
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  align-self: center;
+}
+
+.text-part {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   font-weight: 400;
+  font-size: 18px;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-right: 2%;
+  gap: 5px;
 }
 
-.install{
+#tutorial-title{
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/* .install{
   background-image: url(assets/install.png);
   background-size: 100px 100px;
 }
@@ -71,7 +102,7 @@
 .apps{
   background-image: url(assets/apps.png);
   background-size: 100px 100px;
-}
+} */
 
 @media screen and (max-height: 900px) and (min-width: 1024px){
   .distro-tutorials-cards{

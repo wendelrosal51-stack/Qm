@@ -11,7 +11,7 @@ function renderStep(step, index) {
   if (step.command) {
     media = `<pre class="command-block"><code>${step.command}</code></pre>`;
   } else if (step.type === "video") {
-    media = `<video class="story-media" src="${step.media}" autoplay muted loop controls></video>`;
+    media = `<video class="story-media" src="${step.media}" autoplay muted loop></video>`;
   } else {
     media = `<img class="story-media" src="${step.media}" alt="" />`;
   }
