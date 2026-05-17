@@ -4,7 +4,7 @@ const tutorials = {
     distro: "Ubuntu",
     title: "Installation",
     icon: "assets/install.png",
-    summary: "Prepare an Ubuntu installer safely, understand the ISO file, and create a bootable USB.",
+    summary: "Prepare an Ubuntu installer safely, understand the ISO file, and create a bootable USB and select your configurations.",
     objectives: [
       "Download the Ubuntu ISO from the official website",
       "Use Rufus to prepare a bootable USB drive",
@@ -80,21 +80,72 @@ const tutorials = {
         title: "Start-Up Configurations",
         steps: [
           {
-            text: "Plug in your USB drive and select it under Device.",
-            media: "assets/selectdevice.gif",
-            type: "image"
+            text: "Select your preferred language to localize the installation process and system interface.",
+            media: "assets/ubuntu_install1.mp4",
+            type: "video"
           },
           {
-            text: "Choose the Ubuntu ISO, start the process, and confirm ISO Image mode when Rufus asks.",
-            media: "assets/startpartition.mp4",
+            text: "Toggle your preferred accessiblity settings.",
+            media: "assets/ubuntu_install2.mp4",
             type: "video",
-            warning: "This will delete the files on the USB drive. Back up important files before continuing."
           },
           {
-            text: "After Rufus finishes, keep the USB plugged in and restart the computer.",
-            media: "assets/restartpc.gif",
-            type: "image"
-          }
+            text: "Choose your keyboard layout.",
+            media: "assets/ubuntu_install3.mp4",
+            type: "video"
+          },
+          {
+            text: "Choose your network connection type to determine how the installer fetches updates and drivers during setup.",
+            media: "assets/ubuntu_install4.mp4",
+            type: "video"
+          },
+          {
+            text: "Determine whether you want to evaluate the operating system in a temporary environment or permanently commit it to your storage drive.",
+            media: "assets/ubuntu_install5.mp4",
+            type: "video"
+          },
+          {
+            text: "Choose whether to proceed with a manual setup or utilize a pre-configured automation template to provision the system.",
+            media: "assets/ubuntu_install6.mp4",
+            type: "video"
+          },
+          {
+            text: "Choose the starting package bundle to define the initial software footprint on your desktop.",
+            media: "assets/ubuntu_install7.mp4",
+            type: "video"
+          },
+          {
+            text: "Configure whether the installer should include closed-source drivers and proprietary codecs to optimize hardware performance and media playback.",
+            media: "assets/ubuntu_install8.mp4",
+            type: "video"
+          },
+          {
+            text: "Specify how the installer should structure your storage drive and handle system partitions.",
+            media: "assets/ubuntu_install9.mp4",
+            warning:"Choosing to 'Erase disk and Install Ubuntu' will format your entire flash drive, make sure to back up your files!",
+            type: "video"
+          },
+          {
+            text: "Select the target file system format and define security protocols to safeguard your local storage data.",
+            media: "assets/ubuntu_install10.mp4",
+            type: "video"
+          },
+          {
+            text: "Input your personal details, machine identity, and security credentials to establish the primary system administrator account.",
+            media: "assets/ubuntu_install11.mp4",
+            type: "video"
+          },
+          {
+            text: "Choose your geographical region or nearest city to synchronize your computer clock and manage regional time settings accurately.",
+            media: "assets/ubuntu_install12.mp4",
+            type: "video"
+          },
+          {
+            text: "Examine the comprehensive summary configuration report before committing changes to your storage drive and initiating the final deployment phase.",
+            media: "assets/ubuntu_install13.mp4",
+            type: "video"
+          },
+
         ]
       }
     ],
@@ -170,7 +221,7 @@ const tutorials = {
     lessons: [
       {
         id: 1,
-        title: "Explore the Desktop",
+        title: "Navigating the File System with the Terminal",
         steps: [
           {
             text: "Use the dock to open frequently used apps and switch between running apps.",
