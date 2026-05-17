@@ -74,6 +74,28 @@ const tutorials = {
             type: "image"
           }
         ]
+      },
+      {
+        id: 4,
+        title: "Start-Up Configurations",
+        steps: [
+          {
+            text: "Plug in your USB drive and select it under Device.",
+            media: "assets/selectdevice.gif",
+            type: "image"
+          },
+          {
+            text: "Choose the Ubuntu ISO, start the process, and confirm ISO Image mode when Rufus asks.",
+            media: "assets/startpartition.mp4",
+            type: "video",
+            warning: "This will delete the files on the USB drive. Back up important files before continuing."
+          },
+          {
+            text: "After Rufus finishes, keep the USB plugged in and restart the computer.",
+            media: "assets/restartpc.gif",
+            type: "image"
+          }
+        ]
       }
     ],
     quiz: [

@@ -9,7 +9,7 @@ body{
     background-color: #666060;
     width: 100%;
     height: 30rem;
-    gap: 10px;
+    gap: 1px;
 }
 
 #learn{
@@ -38,7 +38,7 @@ h2{
     flex-direction: row;
     width: 100%;
     height: 13rem;
-    gap: 13px;
+    gap: 1px;
 }
 
 .left{
@@ -57,7 +57,7 @@ h2{
     line-height: 1.7;
     text-align: justify;
     padding-top: 10px;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 hr{
