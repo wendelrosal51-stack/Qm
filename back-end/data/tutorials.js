@@ -212,7 +212,7 @@ const tutorials = {
     distro: "Ubuntu",
     title: "Basic Navigation",
     icon: "assets/features.png",
-    summary: "Learn the Ubuntu desktop layout, file manager, settings, and safe daily navigation.",
+    summary: "Learn the Ubuntu directory layout, directory creation and file navigation.",
     objectives: [
       "Recognize the Ubuntu dock, app launcher, and system menu",
       "Use Files to browse common folders",
@@ -224,19 +224,173 @@ const tutorials = {
         title: "Navigating the File System with the Terminal",
         steps: [
           {
-            text: "Use the dock to open frequently used apps and switch between running apps.",
-            media: "assets/ubuntu.png",
-            type: "image"
+            text: "Open the Terminal by pressing Ctrl + Alt + T or searching 'Terminal' in the Applications menu..",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
           },
           {
-            text: "Open Files to find Downloads, Documents, Pictures, and other common folders.",
-            media: "assets/home.png",
-            type: "image"
+            text: "Type pwd and press Enter. This prints your current directory location.",
+            media: "assets/ubuntu-navigation-lesson1.2.mp4",
+            type: "video"
           },
           {
-            text: "Open Settings from the system menu when you need display, network, or user options.",
-            media: "assets/features.png",
-            type: "image"
+            text: "Type ls and press Enter to list all files and folders in your current directory.",
+            media: "assets/ubuntu-navigation-lesson1.3.mp4",
+            type: "video"
+          },
+          {
+            text: "Type ls -la to see a detailed list including hidden files (those starting with a dot).",
+            media: "assets/ubuntu-navigation-lesson1.4.mp4",
+            type: "video"
+          },
+          {
+            text: "Type cd and type your directory name and press Enter to move into the that folder.",
+            media: "assets/ubuntu-navigation-lesson1.5.mp4",
+            type: "video"
+          },
+          {
+            text: "Type cd .. to go back one level to the parent directory.",
+            media: "assets/ubuntu-navigation-lesson1.6.mp4",
+            type: "video"
+          },
+          {
+            text: "Type cd ~ to instantly return to your home directory from anywhere.",
+            media: "assets/ubuntu-navigation-lesson1.7.mp4",
+            type: "video"
+          },
+        ]
+      },
+    {
+        id: 2,
+        title: "Creating and Deleting Files and Folders",
+        steps: [
+          {
+            text: "Open the Terminal by pressing Ctrl + Alt + T or searching 'Terminal' in the Applications menu..",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Type mkdir yourFolderName and press Enter to create a new folder with the name you typed in.",
+            media: "assets/ubuntu-navigation-lesson2.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Type touch yourFileName.txt to create a new empty text file inside the folder you are in.",
+            media: "assets/ubuntu-navigation-lesson2.2.mp4",
+            type: "video"
+          },
+          {
+            text: "Type mv yourFileName.txt yourNewFileName.txt to rename the file.",
+            media: "assets/ubuntu-navigation-lesson2.3.mp4",
+            type: "video"
+          },
+          {
+            text: "Type cp yourFileName.txt yourBackupFileName.txt to make a copy of the file.",
+            media: "assets/ubuntu-navigation-lesson2.4.mp4",
+            type: "video"
+          },
+          {
+            text: "Type rm yourFileName.txt to delete your chosen file.",
+            media: "assets/ubuntu-navigation-lesson2.5.mp4",
+            type: "video"
+          },
+          {
+            text: "Go back with cd .. then type rm -r yourFolderName to delete the entire folder and its contents.",
+            media: "assets/ubuntu-navigation-lesson2.6.mp4",
+            type: "video"
+          },
+        ]
+      },
+      {
+        id: 3,
+        title: "Searching for Files and Folders Using the Terminal",
+        steps: [
+          {
+            text: "Open the Terminal by pressing Ctrl + Alt + T or searching 'Terminal' in the Applications menu..",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Type find / -name /\"yourFileName.txt\" 2>/dev/null and press Enter to search the entire system for a file by name.",
+            media: "assets/ubuntu-navigation-lesson3.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Type find ~ -name \"*.txt\" to search only your home directory for all files ending in .txt. The * is a wildcard that matches anything.",
+            media: "assets/ubuntu-navigation-lesson3.2.mp4",
+            type: "video"
+          },
+          {
+            text: "Type find ~ -type d -name \"yourFolderName\" to search specifically for a directory instead of a file.",
+            media: "assets/ubuntu-navigation-lesson3.3.mp4",
+            type: "video"
+          }
+        ]
+      },
+       {
+        id: 2,
+        title: "Creating and Deleting Files and Folders",
+        steps: [
+          {
+            text: "Open the Terminal by pressing Ctrl + Alt + T or searching 'Terminal' in the Applications menu..",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Type mkdir yourFolderName and press Enter to create a new folder with the name you typed in.",
+            media: "assets/ubuntu-navigation-lesson2.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Type touch yourFileName.txt to create a new empty text file inside the folder you are in.",
+            media: "assets/ubuntu-navigation-lesson2.2.mp4",
+            type: "video"
+          },
+          {
+            text: "Type mv yourFileName.txt yourNewFileName.txt to rename the file.",
+            media: "assets/ubuntu-navigation-lesson2.3.mp4",
+            type: "video"
+          },
+          {
+            text: "Type cp yourFileName.txt yourBackupFileName.txt to make a copy of the file.",
+            media: "assets/ubuntu-navigation-lesson2.4.mp4",
+            type: "video"
+          },
+          {
+            text: "Type rm yourFileName.txt to delete your chosen file.",
+            media: "assets/ubuntu-navigation-lesson2.5.mp4",
+            type: "video"
+          },
+          {
+            text: "Go back with cd .. then type rm -r yourFolderName to delete the entire folder and its contents.",
+            media: "assets/ubuntu-navigation-lesson2.6.mp4",
+            type: "video"
+          },
+        ]
+      },
+      {
+        id: 3,
+        title: "Searching for Files and Folders Using the Terminal",
+        steps: [
+          {
+            text: "Open the Terminal by pressing Ctrl + Alt + T or searching 'Terminal' in the Applications menu..",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Type find / -name /\"yourFileName.txt\" 2>/dev/null and press Enter to search the entire system for a file by name.",
+            media: "assets/ubuntu-navigation-lesson3.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Type find ~ -name \"*.txt\" to search only your home directory for all files ending in .txt. The * is a wildcard that matches anything.",
+            media: "assets/ubuntu-navigation-lesson3.2.mp4",
+            type: "video"
+          },
+          {
+            text: "Type find ~ -type d -name \"yourFolderName\" to search specifically for a directory instead of a file.",
+            media: "assets/ubuntu-navigation-lesson3.3.mp4",
+            type: "video"
           }
         ]
       }
@@ -267,7 +421,7 @@ const tutorials = {
     distro: "Ubuntu",
     title: "Terminal Commands",
     icon: "assets/command.png",
-    summary: "Practice beginner terminal commands for moving around, listing files, and managing folders.",
+    summary: "Practice beginner terminal commands.",
     objectives: [
       "Open the terminal",
       "Use pwd, ls, and cd",
@@ -276,7 +430,7 @@ const tutorials = {
     lessons: [
       {
         id: 1,
-        title: "First Terminal Commands",
+        title: "Getting to Know Your Way Around the Terminal",
         steps: [
           {
             text: "Open Terminal from the app launcher.",
