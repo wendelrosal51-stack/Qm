@@ -17,10 +17,9 @@
           
               <ul class="nav-links">
                 <li><a href="home.html" class="nav-link ">Home</a></li>
-                <li><a href="ubuntu.html" class="nav-link active">Ubuntu</a></li>
-                <li><a href="mint.html" class="nav-link">Mint</a></li>
-                <li><a href="fedora.html" class="nav-link">Fedora</a></li>
                 <li><a href="overview.html" class="nav-link">Overview</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="admin.html" class="nav-link" id="adminLink" style="display: none">Admin</a></li>
               </ul>
             </div>
           
@@ -54,43 +53,7 @@
             <img src="assets/ubuntu.png" alt="" width="200px" height="200px">
             <p id="distro-name">Linux Ubuntu</p>
     
-            <div class="distro-tutorials-cards">
-                <a href="lesson.html?module=ubuntu-installation&lesson=1" class="links">
-                    <div class="tutorial-card install">
-                        <p>Installation</p>
-                    </div>
-                </a>
-
-                <a href="lesson.html?module=ubuntu-navigation&lesson=1" class="links">
-                    <div class="tutorial-card features">
-                        <p>Basic Navigation</p>
-                    </div>
-                </a>
-
-                <a href="lesson.html?module=ubuntu-commands&lesson=1" class="links">
-                    <div class="tutorial-card commands">
-                        <p>Terminal Commands</p>
-                    </div>
-                </a>
-
-                <a href="lesson.html?module=ubuntu-apps&lesson=1" class="links">
-                    <div class="tutorial-card apps">
-                        <p style="font-size: 16px;">App Installation</p>
-                    </div>
-                </a>
-
-                <a href="lesson.html?module=ubuntu-troubleshooting&lesson=1" class="links">
-                    <div class="tutorial-card trouble">
-                        <p style="font-size: 21px;">Troubleshooting</p>                    
-                    </div>
-                </a>
-
-                <a href="profile.html" class="links">
-                    <div class="tutorial-card">
-                        <p style="font-size: 18px;">Progress and Scores</p>
-                    </div>
-                </a>
-            </div>
+            <div class="distro-tutorials-cards" id="moduleCards" data-distro="Ubuntu"></div>
             
         </div>
 
@@ -98,4 +61,5 @@
 
     </body>
     <script src="home.js"></script>
+    <script src="modules.js"></script>
 </html>

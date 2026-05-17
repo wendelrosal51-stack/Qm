@@ -22,7 +22,7 @@ function renderProfileCard(module, progress, attempts) {
 
 async function loadProfile() {
   const [modulesResponse, progressResponse] = await Promise.all([
-    fetch("/api/tutorials/ubuntu"),
+    fetch("/api/tutorials"),
     fetch("/api/progress")
   ]);
 

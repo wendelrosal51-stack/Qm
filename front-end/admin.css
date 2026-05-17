@@ -1,0 +1,227 @@
+body {
+  background: #f7f7f2;
+  color: #1f1f1f;
+  padding-top: 78px;
+}
+
+.admin-topbar {
+  align-items: center;
+  background: #666060;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 12px 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-account {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.admin-account span,
+.admin-account a {
+  color: #ffffff;
+}
+
+.admin-account button,
+.panel-heading button,
+.builder-heading button,
+.admin-actions button,
+.feedback-ticket button {
+  background: #24ea24;
+  border: 2px solid #1f1f1f;
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  min-height: 42px;
+  padding: 9px 14px;
+}
+
+.admin-shell {
+  display: grid;
+  gap: 24px;
+  margin: 24px auto 56px;
+  width: min(1240px, calc(100% - 32px));
+}
+
+.admin-intro,
+.admin-panel,
+.admin-sidebar,
+.topic-list,
+.edit-panel,
+.feedback-list,
+.feedback-detail,
+.builder-box {
+  background: #ffffff;
+  border: 2px solid #1f1f1f;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.admin-intro {
+  display: grid;
+  gap: 8px;
+}
+
+.admin-intro h1,
+.admin-intro p,
+.panel-heading h2,
+.builder-box h3,
+.topic-list h3,
+.feedback-detail h3 {
+  margin: 0;
+}
+
+.admin-dashboard {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 220px 1fr;
+}
+
+.admin-sidebar {
+  align-content: start;
+  display: grid;
+  gap: 10px;
+  position: sticky;
+  top: 96px;
+}
+
+.admin-sidebar a,
+.topic-row {
+  background: #f2f2f2;
+  border: 2px solid #1f1f1f;
+  border-radius: 6px;
+  color: inherit;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.admin-workspace,
+.admin-panel,
+.module-form,
+.builder-box,
+.feedback-list,
+.feedback-detail {
+  display: grid;
+  gap: 16px;
+}
+
+.panel-heading,
+.builder-heading,
+.feedback-ticket {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.admin-form-grid,
+.builder-grid,
+.modify-layout,
+.feedback-admin-layout {
+  display: grid;
+  gap: 14px;
+}
+
+.admin-form-grid,
+.builder-grid,
+.modify-layout,
+.feedback-admin-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.module-form label,
+.field-group {
+  display: grid;
+  gap: 8px;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #1f1f1f;
+  border-radius: 6px;
+  font: inherit;
+  min-height: 42px;
+  padding: 10px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.entry-card {
+  background: #f7f7f2;
+  border: 2px solid #c8c8c8;
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 12px;
+}
+
+.topic-row {
+  display: block;
+  margin-top: 8px;
+  text-align: left;
+  width: 100%;
+}
+
+.topic-row.active {
+  background: #dffadf;
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.feedback-ticket {
+  background: #f7f7f2;
+  border: 2px solid #c8c8c8;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.feedback-ticket p,
+.feedback-detail p {
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+
+.status-message {
+  background: #dffadf;
+  border: 2px solid #168516;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+@media (max-width: 900px) {
+  .admin-dashboard,
+  .admin-form-grid,
+  .builder-grid,
+  .modify-layout,
+  .feedback-admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    position: static;
+  }
+
+  .admin-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

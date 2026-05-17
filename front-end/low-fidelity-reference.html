@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearNux Low-Fidelity Reference</title>
+    <link rel="stylesheet" href="low-fidelity-reference.css" />
+  </head>
+
+  <body>
+    <header class="reference-header">
+      <div>
+        <p class="eyebrow">Low-fidelity reference</p>
+        <h1>LearNux website structure</h1>
+      </div>
+      <nav class="mini-nav" aria-label="Reference sections">
+        <a href="#home-wireframe">Home</a>
+        <a href="#overview-wireframe">Overview</a>
+        <a href="#about-wireframe">About Us</a>
+        <a href="#module-wireframe">Module</a>
+        <a href="#learning-wireframe">Learning</a>
+        <a href="#account-wireframe">Account</a>
+        <a href="#admin-wireframe">Admin</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flow-map" aria-labelledby="flow-title">
+        <div>
+          <p class="eyebrow">Site flow</p>
+          <h2 id="flow-title">Primary navigation path</h2>
+        </div>
+
+        <div class="flow-row">
+          <div class="flow-item">Login / Sign Up</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Home</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Overview</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Distribution</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Lesson</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Quiz</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Feedback Review</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Profile</div>
+        </div>
+
+        <div class="admin-flow-row">
+          <div class="flow-item">Admin Login</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Admin Dashboard</div>
+          <div class="flow-arrow">to</div>
+          <div class="flow-item">Create Topic</div>
+          <div class="flow-item">Modify Topic</div>
+          <div class="flow-item">Check Feedbacks</div>
+        </div>
+      </section>
+
+      <section class="screen" id="home-wireframe" aria-labelledby="home-title">
+        <div class="screen-label">Home page layout</div>
+        <div class="browser-frame">
+          <div class="topbar">
+            <div class="brand-block">
+              <div class="logo-box"></div>
+              <span>LearNux</span>
+            </div>
+            <div class="nav-blocks">
+              <a href="#home-wireframe">Home</a>
+              <a href="#overview-wireframe">Overview</a>
+              <a href="#about-wireframe">About Us</a>
+            </div>
+            <div class="profile-block">
+              <div class="avatar-box"></div>
+              <span>Guest</span>
+            </div>
+          </div>
+
+          <div class="hero-wire">
+            <div class="large-image-placeholder"></div>
+            <h2 id="home-title">Learn Linux</h2>
+            <p>Short supporting headline</p>
+          </div>
+
+          <div class="two-column">
+            <div class="title-panel">Why Learn with Us?</div>
+            <div class="copy-panel">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="card-grid two-up">
+            <article class="wire-card">
+              <h3>Installation tutorials</h3>
+              <p></p>
+              <p></p>
+              <p class="short-line"></p>
+            </article>
+            <article class="wire-card">
+              <h3>Features tutorials</h3>
+              <p></p>
+              <p></p>
+              <p class="short-line"></p>
+            </article>
+            <article class="wire-card">
+              <h3>Commands tutorials</h3>
+              <p></p>
+              <p></p>
+              <p class="short-line"></p>
+            </article>
+            <article class="wire-card">
+              <h3>Troubleshooting tutorials</h3>
+              <p></p>
+              <p></p>
+              <p class="short-line"></p>
+            </article>
+            <article class="wire-card">
+              <h3>Recommended tutorials</h3>
+              <p></p>
+              <p></p>
+              <p class="short-line"></p>
+            </article>
+            <article class="wire-card">
+              <h3>Assessment quizzes</h3>
+              <p></p>
+              <p></p>
+              <p class="short-line"></p>
+            </article>
+          </div>
+
+          <div class="selection-section">
+            <h3>Let's get you started</h3>
+            <p>Select a Linux Distribution</p>
+            <div class="card-grid three-up">
+              <article class="choice-card">
+                <div class="icon-placeholder"></div>
+                <span>Ubuntu</span>
+              </article>
+              <article class="choice-card">
+                <div class="icon-placeholder"></div>
+                <span>Mint</span>
+              </article>
+              <article class="choice-card">
+                <div class="icon-placeholder"></div>
+                <span>Fedora</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="overview-wireframe" aria-labelledby="overview-title">
+        <div class="screen-label">Overview page layout</div>
+        <div class="browser-frame compact-frame">
+          <div class="topbar">
+            <div class="brand-block">
+              <div class="logo-box"></div>
+              <span>LearNux</span>
+            </div>
+            <div class="nav-blocks">
+              <a href="#home-wireframe">Home</a>
+              <a href="#overview-wireframe">Overview</a>
+              <a href="#about-wireframe">About Us</a>
+            </div>
+            <div class="profile-block">
+              <div class="avatar-box"></div>
+              <span>Guest</span>
+            </div>
+          </div>
+
+          <div class="overview-hero">
+            <p class="eyebrow">Linux OS overview</p>
+            <h2 id="overview-title">What is Linux?</h2>
+            <p>
+              Linux is an open-source operating system that helps computers manage hardware,
+              run applications, store files, and connect to networks. It is widely used on
+              personal computers, servers, phones, embedded devices, and cloud systems.
+            </p>
+          </div>
+
+          <div class="overview-layout">
+            <article class="overview-card">
+              <div class="icon-placeholder"></div>
+              <h3>Open-source system</h3>
+              <p>Users can study, share, and improve Linux because its source code is open.</p>
+            </article>
+            <article class="overview-card">
+              <div class="icon-placeholder"></div>
+              <h3>Kernel and tools</h3>
+              <p>The Linux kernel works with system tools to control files, processes, memory, and devices.</p>
+            </article>
+            <article class="overview-card">
+              <div class="icon-placeholder"></div>
+              <h3>Many distributions</h3>
+              <p>Ubuntu, Mint, Fedora, and other distributions package Linux for different user needs.</p>
+            </article>
+          </div>
+
+          <div class="overview-summary">
+            <h3>Why learners should know it</h3>
+            <div class="copy-panel">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="about-wireframe" aria-labelledby="about-title">
+        <div class="screen-label">About Us page layout</div>
+        <div class="browser-frame compact-frame">
+          <div class="topbar">
+            <div class="brand-block">
+              <div class="logo-box"></div>
+              <span>LearNux</span>
+            </div>
+            <div class="nav-blocks">
+              <a href="#home-wireframe">Home</a>
+              <a href="#overview-wireframe">Overview</a>
+              <a href="#about-wireframe">About Us</a>
+            </div>
+            <div class="profile-block">
+              <div class="avatar-box"></div>
+              <span>Guest</span>
+            </div>
+          </div>
+
+          <div class="about-hero">
+            <p class="eyebrow">About the project</p>
+            <h2 id="about-title">Meet the LearNux developers</h2>
+            <p>This page introduces the people who planned, designed, and built the website.</p>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <div class="profile-placeholder"></div>
+              <h3>Developer Name</h3>
+              <p>Role or responsibility</p>
+              <div class="team-lines">
+                <span></span>
+                <span></span>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="profile-placeholder"></div>
+              <h3>Developer Name</h3>
+              <p>Role or responsibility</p>
+              <div class="team-lines">
+                <span></span>
+                <span></span>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="profile-placeholder"></div>
+              <h3>Developer Name</h3>
+              <p>Role or responsibility</p>
+              <div class="team-lines">
+                <span></span>
+                <span></span>
+              </div>
+            </article>
+          </div>
+
+          <div class="about-summary">
+            <h3>Project purpose</h3>
+            <div class="copy-panel">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="module-wireframe" aria-labelledby="module-title">
+        <div class="screen-label">Distribution module layout</div>
+        <div class="browser-frame compact-frame">
+          <div class="topbar">
+            <div class="brand-block">
+              <div class="logo-box"></div>
+              <span>LearNux</span>
+            </div>
+            <div class="nav-blocks">
+              <a href="#home-wireframe">Home</a>
+              <a href="#overview-wireframe">Overview</a>
+              <a href="#about-wireframe">About Us</a>
+            </div>
+            <div class="profile-block">
+              <div class="avatar-box"></div>
+              <span>Guest</span>
+            </div>
+          </div>
+
+          <div class="module-heading">
+            <div class="back-button">Back</div>
+            <div class="large-image-placeholder"></div>
+            <h2 id="module-title">Linux Ubuntu</h2>
+          </div>
+
+          <div class="card-grid module-grid">
+            <article class="module-card">
+              <div class="icon-placeholder"></div>
+              <span>Installation</span>
+            </article>
+            <article class="module-card">
+              <div class="icon-placeholder"></div>
+              <span>Basic Navigation</span>
+            </article>
+            <article class="module-card">
+              <div class="icon-placeholder"></div>
+              <span>Terminal Commands</span>
+            </article>
+            <article class="module-card">
+              <div class="icon-placeholder"></div>
+              <span>App Installation</span>
+            </article>
+            <article class="module-card">
+              <div class="icon-placeholder"></div>
+              <span>Troubleshooting</span>
+            </article>
+            <article class="module-card">
+              <div class="icon-placeholder"></div>
+              <span>Progress and Scores</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="learning-wireframe" aria-labelledby="learning-title">
+        <div class="screen-label">Lesson and quiz layout</div>
+        <div class="browser-frame">
+          <div class="topbar">
+            <div class="brand-block">
+              <div class="logo-box"></div>
+              <span>LearNux</span>
+            </div>
+            <div class="nav-blocks">
+              <a href="#home-wireframe">Home</a>
+              <a href="#overview-wireframe">Overview</a>
+              <a href="#about-wireframe">About Us</a>
+            </div>
+            <div class="profile-block">
+              <div class="avatar-box"></div>
+              <span>Guest</span>
+            </div>
+          </div>
+
+          <div class="lesson-heading">
+            <div class="back-button">Back to Ubuntu</div>
+            <div>
+              <p class="eyebrow">Ubuntu Module</p>
+              <h2 id="learning-title">Lesson title</h2>
+              <p class="summary-line"></p>
+            </div>
+            <div class="pill">Lesson 1 of 5</div>
+          </div>
+
+          <div class="story-step">
+            <div class="story-copy">
+              <span></span>
+              <span></span>
+              <span class="short-line"></span>
+            </div>
+            <div class="media-box"></div>
+          </div>
+
+          <div class="story-step">
+            <div class="story-copy">
+              <span></span>
+              <span></span>
+              <span class="short-line"></span>
+            </div>
+            <div class="media-box code-like"></div>
+          </div>
+
+          <div class="action-row">
+            <button>Previous</button>
+            <button>Mark Complete</button>
+            <button>Next</button>
+            <button>Take Quiz</button>
+          </div>
+
+          <div class="quiz-preview">
+            <h3>Quiz screen structure</h3>
+            <div class="question-box">
+              <p class="question-line"></p>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="feedback-preview" id="feedback-review-wireframe">
+            <div class="feedback-intro">
+              <div>
+                <p class="eyebrow">After quiz completion</p>
+                <h3>Module feedback review</h3>
+              </div>
+              <div class="pill">Optional</div>
+            </div>
+
+            <div class="feedback-layout">
+              <div class="feedback-copy">
+                <p class="feedback-line"></p>
+                <p class="feedback-line short-line"></p>
+              </div>
+
+              <form class="feedback-form">
+                <label>
+                  <span>How helpful was this module?</span>
+                  <div class="rating-row" aria-hidden="true">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                  </div>
+                </label>
+
+                <label>
+                  <span>What part was confusing?</span>
+                  <div class="textarea-placeholder"></div>
+                </label>
+
+                <label>
+                  <span>What should we improve for future learners?</span>
+                  <div class="textarea-placeholder large"></div>
+                </label>
+
+                <button type="button">Submit Feedback</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="account-wireframe" aria-labelledby="account-title">
+        <div class="screen-label">Account screens layout</div>
+        <div class="split-screens">
+          <div class="browser-frame small-frame">
+            <h2 id="account-title">Login / Sign Up</h2>
+            <div class="auth-layout">
+              <div class="auth-brand">
+                <div class="brand-title"></div>
+                <div class="tagline"></div>
+              </div>
+              <form class="auth-form">
+                <div class="large-image-placeholder"></div>
+                <label>
+                  <span>Username</span>
+                  <input type="text" aria-label="Username placeholder" />
+                </label>
+                <label>
+                  <span>Password</span>
+                  <input type="password" aria-label="Password placeholder" />
+                </label>
+                <button type="button">Submit</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="browser-frame small-frame">
+            <h2>Profile</h2>
+            <div class="profile-layout">
+              <div class="lesson-heading profile-heading">
+                <div class="back-button">Back to Home</div>
+                <div>
+                  <p class="eyebrow">Learner Profile</p>
+                  <h3>Your progress</h3>
+                </div>
+              </div>
+              <div class="card-grid profile-grid">
+                <article class="wire-card">
+                  <h3>Module progress</h3>
+                  <p></p>
+                  <p></p>
+                </article>
+                <article class="wire-card">
+                  <h3>Quiz attempts</h3>
+                  <p></p>
+                  <p></p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="admin-wireframe" aria-labelledby="admin-title">
+        <div class="screen-label">Admin dashboard layout</div>
+        <div class="browser-frame admin-frame">
+          <div class="admin-topbar">
+            <div class="brand-block">
+              <div class="logo-box"></div>
+              <span>LearNux Admin</span>
+            </div>
+            <div class="admin-account">
+              <span>Admin Name</span>
+              <button type="button">Logout</button>
+            </div>
+          </div>
+
+          <div class="admin-login-note">
+            <p class="eyebrow">Admin access rule</p>
+            <h2 id="admin-title">Admin login redirects to dashboard</h2>
+            <p>When an admin account signs in, it goes here instead of the learner home page.</p>
+          </div>
+
+          <div class="admin-dashboard">
+            <aside class="admin-sidebar">
+              <a href="#create-topic-panel">Create Topic</a>
+              <a href="#modify-topic-panel">Modify Topic</a>
+              <a href="#feedback-panel">Check Feedbacks</a>
+            </aside>
+
+            <div class="admin-workspace">
+              <section class="admin-panel" id="create-topic-panel" aria-labelledby="create-topic-title">
+                <div class="panel-heading">
+                  <div>
+                    <p class="eyebrow">Dashboard tool 1</p>
+                    <h3 id="create-topic-title">Create a Topic</h3>
+                  </div>
+                  <button type="button">Save Topic</button>
+                </div>
+
+                <div class="admin-form-grid">
+                  <label>
+                    <span>Select distro</span>
+                    <div class="select-placeholder">Ubuntu / Mint / Fedora</div>
+                  </label>
+                  <label>
+                    <span>Topic title</span>
+                    <input type="text" aria-label="Topic title placeholder" />
+                  </label>
+                </div>
+
+                <div class="builder-grid">
+                  <div class="builder-box">
+                    <h4>Add modules and lessons</h4>
+                    <div class="stack-lines">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <button type="button">Add Lesson</button>
+                  </div>
+
+                  <div class="builder-box">
+                    <h4>Add quiz questions</h4>
+                    <div class="stack-lines">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <button type="button">Add Question</button>
+                  </div>
+
+                  <div class="builder-box">
+                    <h4>Feedback prompt</h4>
+                    <div class="textarea-placeholder"></div>
+                    <button type="button">Attach Feedback Form</button>
+                  </div>
+                </div>
+              </section>
+
+              <section class="admin-panel" id="modify-topic-panel" aria-labelledby="modify-topic-title">
+                <div class="panel-heading">
+                  <div>
+                    <p class="eyebrow">Dashboard tool 2</p>
+                    <h3 id="modify-topic-title">Modify the Topic</h3>
+                  </div>
+                  <button type="button">Publish Updates</button>
+                </div>
+
+                <div class="modify-layout">
+                  <div class="topic-list">
+                    <h4>Existing topics/modules</h4>
+                    <div class="topic-row">Ubuntu Installation</div>
+                    <div class="topic-row">Basic Navigation</div>
+                    <div class="topic-row">Terminal Commands</div>
+                  </div>
+
+                  <div class="edit-panel">
+                    <h4>Edit selected module</h4>
+                    <label>
+                      <span>Module name</span>
+                      <input type="text" aria-label="Module name placeholder" />
+                    </label>
+                    <label>
+                      <span>Lesson content</span>
+                      <div class="textarea-placeholder large"></div>
+                    </label>
+                    <div class="action-row admin-actions">
+                      <button type="button">Update Lesson</button>
+                      <button type="button">Delete Lesson</button>
+                      <button type="button">Delete Module</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="admin-panel" id="feedback-panel" aria-labelledby="feedback-admin-title">
+                <div class="panel-heading">
+                  <div>
+                    <p class="eyebrow">Dashboard tool 3</p>
+                    <h3 id="feedback-admin-title">Check Feedbacks</h3>
+                  </div>
+                  <button type="button">Open Related Module</button>
+                </div>
+
+                <div class="feedback-admin-layout">
+                  <div class="feedback-list">
+                    <article class="feedback-ticket">
+                      <div>
+                        <strong>Ubuntu Installation</strong>
+                        <p>Rating: 3/5</p>
+                      </div>
+                      <button type="button">Review</button>
+                    </article>
+                    <article class="feedback-ticket">
+                      <div>
+                        <strong>Terminal Commands</strong>
+                        <p>Rating: 4/5</p>
+                      </div>
+                      <button type="button">Review</button>
+                    </article>
+                  </div>
+
+                  <div class="feedback-detail">
+                    <h4>User feedback detail</h4>
+                    <div class="textarea-placeholder large"></div>
+                    <div class="action-row admin-actions">
+                      <button type="button">Mark Action Taken</button>
+                      <button type="button">Remove Feedback</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

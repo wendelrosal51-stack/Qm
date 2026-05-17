@@ -11,7 +11,7 @@ function renderStep(step, index) {
   if (step.command) {
     media = `<pre class="command-block"><code>${step.command}</code></pre>`;
   } else if (step.type === "video") {
-    media = `<video class="story-media" src="${step.media}" autoplay muted loop controls></video>`;
+    media = `<video class="story-media" src="${step.media}" autoplay muted loop></video>`;
   } else {
     media = `<img class="story-media" src="${step.media}" alt="" />`;
   }
@@ -88,6 +88,10 @@ async function loadLesson() {
   document.getElementById("lessonProgress").textContent = `Lesson ${currentLesson.id} of ${moduleData.lessons.length}`;
   document.getElementById("storyboard").innerHTML = currentLesson.steps.map(renderStep).join("");
   document.getElementById("completeLesson").addEventListener("click", markLessonComplete);
+  const backLink = document.getElementById("distroBackLink");
+  const distroPage = `${moduleData.distro.toLowerCase()}.html`;
+  backLink.href = distroPage;
+  backLink.textContent = `Back to ${moduleData.distro}`;
 
   updateLessonNavigation();
 }

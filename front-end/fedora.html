@@ -17,10 +17,9 @@
           
               <ul class="nav-links">
                 <li><a href="home.html" class="nav-link ">Home</a></li>
-                <li><a href="ubuntu.html" class="nav-link">Ubuntu</a></li>
-                <li><a href="mint.html" class="nav-link">Mint</a></li>
-                <li><a href="fedora.html" class="nav-link active">Fedora</a></li>
                 <li><a href="overview.html" class="nav-link">Overview</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="admin.html" class="nav-link" id="adminLink" style="display: none">Admin</a></li>
               </ul>
             </div>
           
@@ -54,36 +53,7 @@
             <img src="assets/fedora.png" alt="" width="200px" height="200px">
             <p id="distro-name">Linux Fedora</p>
     
-            <div class="distro-tutorials-cards">
-                <a href="ubuntu-install-intro.html" class="links">
-                    <div class="tutorial-card install">
-                        <p>Installation</p>
-                    </div>
-                </a>
-
-                <a href="" class="links">
-                    <div class="tutorial-card features">
-                        <p>Features</p>
-                    </div>
-                </a>
-
-                <a href="" class="links">
-                    <div class="tutorial-card commands">
-                        <p>Commands</p>
-                    </div>
-                </a>
-                <a href="ubuntu-trouble-intro.html" class="links">
-                    <div class="tutorial-card trouble">
-                        <p style="font-size: 21px;">Troubleshooting</p>                    
-                    </div>
-                </a>
-            
-                <a href="ubuntu-apps-intro.html" class="links">
-                    <div class="tutorial-card apps">
-                        <p style="font-size: 16px;">Recommended Apps</p>
-                    </div>
-                </a>
-            </div>
+            <div class="distro-tutorials-cards" id="moduleCards" data-distro="Fedora"></div>
             
         </div>
 
@@ -91,4 +61,5 @@
 
     </body>
     <script src="home.js"></script>
+    <script src="modules.js"></script>
 </html>

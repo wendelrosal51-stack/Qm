@@ -54,8 +54,60 @@ async function submitQuiz(event) {
     <p>You scored ${result.score} out of ${result.total}. Passing score is ${result.passingScore}.</p>
     <a class="quiz-button" href="profile.html">View Progress</a>
     <a class="secondary-button" href="lesson.html?module=${quizModuleId}&lesson=1">Review Module</a>
+    <form class="feedback-form" id="feedbackForm">
+      <h2>Module feedback review</h2>
+      <label>
+        How helpful was this module?
+        <select name="rating" required>
+          <option value="5">5 - Very helpful</option>
+          <option value="4">4 - Helpful</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Needs work</option>
+          <option value="1">1 - Confusing</option>
+        </select>
+      </label>
+      <label>
+        What part was confusing?
+        <textarea name="confusing"></textarea>
+      </label>
+      <label>
+        What should we improve for future learners?
+        <textarea name="improvement"></textarea>
+      </label>
+      <button class="primary-button" type="submit">Submit Feedback</button>
+      <p id="feedbackStatus"></p>
+    </form>
   `;
   resultBox.classList.add("show");
+
+  document.getElementById("feedbackForm").addEventListener("submit", submitFeedback);
+}
+
+async function submitFeedback(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const formData = new FormData(form);
+  const response = await fetch("/api/feedback", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      moduleId: quizModuleId,
+      rating: Number(formData.get("rating")),
+      confusing: formData.get("confusing"),
+      improvement: formData.get("improvement")
+    })
+  });
+  const result = await response.json();
+  const status = document.getElementById("feedbackStatus");
+
+  if (!response.ok) {
+    status.textContent = result.error || "Could not submit feedback.";
+    return;
+  }
+
+  status.textContent = "Thanks. Your feedback was sent to the admin dashboard.";
+  form.querySelector("button").disabled = true;
 }
 
 async function loadQuiz() {
@@ -73,6 +125,9 @@ async function loadQuiz() {
   document.getElementById("quizLabel").textContent = `${quiz.distro} Module Quiz`;
   document.getElementById("quizTitle").textContent = `${quiz.title} Quiz`;
   document.getElementById("quizProgress").textContent = `${quizQuestions.length} questions`;
+  const backLink = document.getElementById("distroBackLink");
+  backLink.href = `${quiz.distro.toLowerCase()}.html`;
+  backLink.textContent = `Back to ${quiz.distro}`;
 
   const form = document.getElementById("quizForm");
   form.innerHTML = `
