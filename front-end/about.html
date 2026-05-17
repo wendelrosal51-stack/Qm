@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
   <head>
-    <title>Quiz | LearNux</title>
+    <title>About Us | LearNux</title>
     <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="learning.css" />
+    <link rel="stylesheet" href="site-pages.css" />
     <link rel="icon" type="image/png" href="assets/logo.png" />
   </head>
 
@@ -20,7 +20,7 @@
         <ul class="nav-links">
           <li><a href="home.html" class="nav-link">Home</a></li>
           <li><a href="overview.html" class="nav-link">Overview</a></li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
           <li><a href="admin.html" class="nav-link" id="adminLink" style="display: none">Admin</a></li>
         </ul>
       </div>
@@ -29,7 +29,6 @@
         <div class="profile-section" id="profileSection">
           <img src="assets/profile.png" alt="Profile" class="profile-icon" id="profileIcon" />
           <span class="username" id="usernameDisplay">Guest</span>
-
           <div class="profile-dropdown" id="profileDropdown">
             <a href="profile.html" id="viewProfile">View Profile</a>
             <a href="#" id="settings">Settings</a>
@@ -39,22 +38,40 @@
       </div>
     </nav>
 
-    <main class="learning-shell">
-      <section class="lesson-header">
-        <a href="ubuntu.html" class="back-link" id="distroBackLink">Back to Ubuntu</a>
-        <div>
-          <p class="eyebrow" id="quizLabel">Ubuntu Quiz</p>
-          <h1 id="quizTitle">Loading quiz...</h1>
-          <p>Answer the questions to check if the module made sense.</p>
-        </div>
-        <div class="progress-pill" id="quizProgress">0 questions</div>
+    <main class="content-shell">
+      <section class="page-hero">
+        <p class="eyebrow">About the project</p>
+        <h1>Meet the LearNux developers</h1>
+        <p>This page introduces the people who planned, designed, and built the website.</p>
       </section>
 
-      <form class="quiz-form" id="quizForm"></form>
-      <section class="result-box" id="quizResult"></section>
+      <section class="team-grid">
+        <article>
+          <img src="assets/profile.png" alt="" />
+          <h2>Developer Name</h2>
+          <p>Planning, research, and learning content.</p>
+        </article>
+        <article>
+          <img src="assets/profile.png" alt="" />
+          <h2>Developer Name</h2>
+          <p>Frontend layout, styling, and page structure.</p>
+        </article>
+        <article>
+          <img src="assets/profile.png" alt="" />
+          <h2>Developer Name</h2>
+          <p>Backend, account flow, progress, and admin tools.</p>
+        </article>
+      </section>
+
+      <section class="summary-band">
+        <h2>Project purpose</h2>
+        <p>
+          LearNux helps beginners learn Linux through guided modules, visual steps,
+          quizzes, saved progress, and feedback that admins can review.
+        </p>
+      </section>
     </main>
 
     <script src="home.js"></script>
-    <script src="quiz.js"></script>
   </body>
 </html>

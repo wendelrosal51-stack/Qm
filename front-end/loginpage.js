@@ -28,7 +28,7 @@ document.getElementById("log").onclick = async function(event) {
             
             if (response.ok) {
                 window.alert(`You have Logged In! Welcome ${data.username}`);
-                window.location.href = '/home.html';
+                window.location.href = data.redirectUrl || '/home.html';
             } else {
                 window.alert(data.error);
             }

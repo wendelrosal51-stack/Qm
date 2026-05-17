@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Admin Dashboard | LearNux</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+
+  <body>
+    <nav class="admin-topbar">
+      <a href="home.html" class="brand-link">
+        <div class="nav-left">
+          <img src="assets/logo.png" alt="LearNux Logo" class="nav-logo" />
+          <span class="nav-brand">LearNux Admin</span>
+        </div>
+      </a>
+
+      <div class="admin-account">
+        <span id="adminName">Admin</span>
+        <a href="home.html">Learner Site</a>
+        <button type="button" id="logoutBtn">Logout</button>
+      </div>
+    </nav>
+
+    <main class="admin-shell">
+      <section class="admin-intro">
+        <p class="eyebrow">Admin access rule</p>
+        <h1>Admin dashboard</h1>
+        <p>Create new modules, modify existing topics, and review learner feedback from one place.</p>
+      </section>
+
+      <div class="admin-dashboard">
+        <aside class="admin-sidebar">
+          <a href="#create-topic-panel">Create Topic</a>
+          <a href="#modify-topic-panel">Modify Topic</a>
+          <a href="#feedback-panel">Check Feedbacks</a>
+        </aside>
+
+        <div class="admin-workspace">
+          <section class="admin-panel" id="create-topic-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Dashboard tool 1</p>
+                <h2>Create a Topic</h2>
+              </div>
+              <button type="button" id="saveCreate">Save Topic</button>
+            </div>
+
+            <form class="module-form" id="createForm">
+              <div class="admin-form-grid">
+                <label>
+                  <span>Select distro</span>
+                  <select name="distro">
+                    <option>Ubuntu</option>
+                    <option>Mint</option>
+                    <option>Fedora</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Topic title</span>
+                  <input name="title" type="text" placeholder="Example: Package Management" required />
+                </label>
+                <label>
+                  <span>Icon path</span>
+                  <input name="icon" type="text" placeholder="assets/apps.png" />
+                </label>
+                <label>
+                  <span>Objectives</span>
+                  <textarea name="objectives" placeholder="One objective per line"></textarea>
+                </label>
+              </div>
+
+              <label>
+                <span>Topic summary</span>
+                <textarea name="summary" placeholder="Short description for the module card"></textarea>
+              </label>
+
+              <div class="builder-grid">
+                <section class="builder-box">
+                  <div class="builder-heading">
+                    <h3>Lessons</h3>
+                    <button type="button" data-add-lesson="create">Add Lesson</button>
+                  </div>
+                  <div id="createLessons"></div>
+                </section>
+
+                <section class="builder-box">
+                  <div class="builder-heading">
+                    <h3>Quiz Questions</h3>
+                    <button type="button" data-add-question="create">Add Question</button>
+                  </div>
+                  <div id="createQuestions"></div>
+                </section>
+              </div>
+            </form>
+          </section>
+
+          <section class="admin-panel" id="modify-topic-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Dashboard tool 2</p>
+                <h2>Modify the Topic</h2>
+              </div>
+              <button type="button" id="saveEdit">Publish Updates</button>
+            </div>
+
+            <div class="modify-layout">
+              <div class="topic-list">
+                <h3>Existing topics/modules</h3>
+                <div id="moduleList"></div>
+              </div>
+
+              <form class="module-form edit-panel" id="editForm">
+                <input name="id" type="hidden" />
+                <div class="admin-form-grid">
+                  <label>
+                    <span>Select distro</span>
+                    <select name="distro">
+                      <option>Ubuntu</option>
+                      <option>Mint</option>
+                      <option>Fedora</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Module name</span>
+                    <input name="title" type="text" required />
+                  </label>
+                  <label>
+                    <span>Icon path</span>
+                    <input name="icon" type="text" />
+                  </label>
+                  <label>
+                    <span>Objectives</span>
+                    <textarea name="objectives"></textarea>
+                  </label>
+                </div>
+
+                <label>
+                  <span>Topic summary</span>
+                  <textarea name="summary"></textarea>
+                </label>
+
+                <div class="builder-grid">
+                  <section class="builder-box">
+                    <div class="builder-heading">
+                      <h3>Lessons</h3>
+                      <button type="button" data-add-lesson="edit">Add Lesson</button>
+                    </div>
+                    <div id="editLessons"></div>
+                  </section>
+
+                  <section class="builder-box">
+                    <div class="builder-heading">
+                      <h3>Quiz Questions</h3>
+                      <button type="button" data-add-question="edit">Add Question</button>
+                    </div>
+                    <div id="editQuestions"></div>
+                  </section>
+                </div>
+
+                <div class="admin-actions">
+                  <button type="button" id="deleteModule">Delete Module</button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <section class="admin-panel" id="feedback-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Dashboard tool 3</p>
+                <h2>Check Feedbacks</h2>
+              </div>
+              <button type="button" id="refreshFeedback">Refresh</button>
+            </div>
+
+            <div class="feedback-admin-layout">
+              <div class="feedback-list" id="feedbackList"></div>
+              <div class="feedback-detail" id="feedbackDetail">
+                <h3>User feedback detail</h3>
+                <p>Select feedback to review it.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

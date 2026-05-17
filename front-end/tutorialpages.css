@@ -48,6 +48,16 @@
   background-color: #24ea246f;
 }
 
+.empty-modules {
+  background: #ffffff;
+  border: 2px solid #1f1f1f;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 28px;
+  text-align: center;
+  width: min(620px, 100%);
+}
+
 .tutorial-card img{
   padding: 20px;
   width: 150px;

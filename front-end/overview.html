@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Overview | LearNux</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="site-pages.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-left-group">
+        <a href="home.html" class="brand-link">
+          <div class="nav-left">
+            <img src="assets/logo.png" alt="LearNux Logo" class="nav-logo" />
+            <span class="nav-brand">LearNux</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="overview.html" class="nav-link active">Overview</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="admin.html" class="nav-link" id="adminLink" style="display: none">Admin</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="profile-section" id="profileSection">
+          <img src="assets/profile.png" alt="Profile" class="profile-icon" id="profileIcon" />
+          <span class="username" id="usernameDisplay">Guest</span>
+          <div class="profile-dropdown" id="profileDropdown">
+            <a href="profile.html" id="viewProfile">View Profile</a>
+            <a href="#" id="settings">Settings</a>
+            <a href="#" id="logoutBtn">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="content-shell">
+      <section class="page-hero">
+        <p class="eyebrow">Linux OS overview</p>
+        <h1>What is Linux?</h1>
+        <p>
+          Linux is an open-source operating system that helps computers manage hardware,
+          run applications, store files, and connect to networks.
+        </p>
+      </section>
+
+      <section class="info-grid">
+        <article>
+          <img src="assets/features.png" alt="" />
+          <h2>Open-source system</h2>
+          <p>Linux can be studied, shared, and improved because its source code is open.</p>
+        </article>
+        <article>
+          <img src="assets/command.png" alt="" />
+          <h2>Kernel and tools</h2>
+          <p>The Linux kernel works with system tools to control files, processes, memory, and devices.</p>
+        </article>
+        <article>
+          <img src="assets/ubuntu.png" alt="" />
+          <h2>Many distributions</h2>
+          <p>Ubuntu, Mint, Fedora, and other distributions package Linux for different user needs.</p>
+        </article>
+      </section>
+
+      <section class="summary-band">
+        <h2>Why learners should know it</h2>
+        <p>
+          Linux skills help learners understand how computers work, use command-line tools,
+          troubleshoot systems, and prepare for development or IT work.
+        </p>
+      </section>
+    </main>
+
+    <script src="home.js"></script>
+  </body>
+</html>

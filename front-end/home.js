@@ -5,10 +5,17 @@ window.addEventListener('DOMContentLoaded', async () => {
         const data = await response.json();
         
         if (data.loggedIn) {
-            // Update username display
-            document.getElementById('usernameDisplay').textContent = data.username;
+            const usernameDisplay = document.getElementById('usernameDisplay');
+            const adminLink = document.getElementById('adminLink');
+
+            if (usernameDisplay) {
+                usernameDisplay.textContent = data.username;
+            }
+
+            if (adminLink && data.role === 'admin') {
+                adminLink.style.display = 'inline-block';
+            }
         } else {
-            // Redirect to login if not logged in
             window.location.href = '/';
         }
     } catch (error) {
@@ -21,18 +28,25 @@ window.addEventListener('DOMContentLoaded', async () => {
 const profileSection = document.getElementById('profileSection');
 const profileDropdown = document.getElementById('profileDropdown');
 
-profileSection.addEventListener('click', (e) => {
-    e.stopPropagation();
-    profileDropdown.classList.toggle('show');
-});
+if (profileSection && profileDropdown) {
+    profileSection.addEventListener('click', (e) => {
+        e.stopPropagation();
+        profileDropdown.classList.toggle('show');
+    });
+}
 
 // Close dropdown when clicking outside
 document.addEventListener('click', () => {
-    profileDropdown.classList.remove('show');
+    if (profileDropdown) {
+        profileDropdown.classList.remove('show');
+    }
 });
 
 // Logout functionality
-document.getElementById('logoutBtn').addEventListener('click', async (e) => {
+const logoutBtn = document.getElementById('logoutBtn');
+
+if (logoutBtn) {
+logoutBtn.addEventListener('click', async (e) => {
     e.preventDefault();
     
     try {
@@ -49,14 +63,23 @@ document.getElementById('logoutBtn').addEventListener('click', async (e) => {
         window.alert('Error logging out. Please try again.');
     }
 });
+}
 
-document.getElementById('viewProfile').addEventListener('click', (e) => {
+const viewProfile = document.getElementById('viewProfile');
+
+if (viewProfile) {
+viewProfile.addEventListener('click', (e) => {
     e.preventDefault();
     window.location.href = '/profile.html';
 });
+}
 
 // Settings (placeholder)
-document.getElementById('settings').addEventListener('click', (e) => {
+const settingsLink = document.getElementById('settings');
+
+if (settingsLink) {
+settingsLink.addEventListener('click', (e) => {
     e.preventDefault();
     window.alert('Settings page coming soon!');
 });
+}

@@ -88,6 +88,10 @@ async function loadLesson() {
   document.getElementById("lessonProgress").textContent = `Lesson ${currentLesson.id} of ${moduleData.lessons.length}`;
   document.getElementById("storyboard").innerHTML = currentLesson.steps.map(renderStep).join("");
   document.getElementById("completeLesson").addEventListener("click", markLessonComplete);
+  const backLink = document.getElementById("distroBackLink");
+  const distroPage = `${moduleData.distro.toLowerCase()}.html`;
+  backLink.href = distroPage;
+  backLink.textContent = `Back to ${moduleData.distro}`;
 
   updateLessonNavigation();
 }
