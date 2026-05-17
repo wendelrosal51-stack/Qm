@@ -373,7 +373,7 @@ const tutorials = {
         title: "Searching for Files and Folders Using the Terminal",
         steps: [
           {
-            text: "Open the Terminal by pressing Ctrl + Alt + T or searching 'Terminal' in the Applications menu..",
+            text: "Open the Terminal by pressing Ctrl + Alt + T or searching 'Terminal' in the Applications menu.",
             media: "assets/ubuntu-navigation-lesson1.1.mp4",
             type: "video"
           },
@@ -434,17 +434,81 @@ const tutorials = {
         steps: [
           {
             text: "Open Terminal from the app launcher.",
-            media: "assets/terminal.gif",
-            type: "image"
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
           },
           {
-            text: "Use pwd to show your current folder and ls to list files.",
-            command: "pwd\nls"
+            text: "Look at the prompt line. The ~ tells you that you are currently in your home folder. The $ means you are a regular user.",
+            media: "assets/ubuntu-terminal-lesson1.1.mp4",
+            type:"video"
           },
           {
-            text: "Use cd to move into a folder and mkdir to create a new folder.",
-            command: "cd Downloads\nmkdir practice-folder"
-          }
+            text: "Type whoami and press Enter to confirm which user you are logged in as.",
+            media: "assets/ubuntu-terminal-lesson1.2.mp4",
+            type:"video"
+          },
+          {
+            text: "Type uname -a to see basic information about your Ubuntu system.",
+            media: "assets/ubuntu-terminal-lesson1.3.mp4",
+            type:"video"
+          },
+          {
+            text: " If you mistype a command, press Ctrl + C to cancel it and get a fresh prompt line.",
+            media: "assets/ubuntu-terminal-lesson1.4.mp4",
+            type:"video"
+          },
+          {
+            text: "Press the Up arrow key to bring back your last typed command without retyping it.",
+            media: "assets/ubuntu-terminal-lesson1.5.mp4",
+            type:"video"
+          },
+          {
+            text: "Type clear to clean up the screen when it gets too cluttered.",
+            media: "assets/ubuntu-terminal-lesson1.6.mp4",
+            type:"video"
+          },
+          {
+            text: "Type history to see a list of every command you have typed so far.",
+            media: "assets/ubuntu-terminal-lesson1.7.mp4",
+            type:"video"
+          },
+          {
+            text: "To repeat a specific command from your history, type ! followed by its number.",
+            media: "assets/ubuntu-terminal-lesson1.8.mp4",
+            type:"video"
+          },
+        ]
+      },
+      {
+        id: 2,
+        title: "Using Shortcuts and Tricks to Work Faster in the Terminal",
+        steps: [
+          {
+            text: "Open Terminal from the app launcher.",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Start typing a long folder or file name and press Tab to autocomplete it. If there are multiple matches, press Tab twice to see all options.",
+            media: "assets/ubuntu-terminal-lesson2.1.mp4",
+            type:"video"
+          },
+          {
+            text: "Use Ctrl + A to jump to the beginning of a command line instantly without using the arrow keys, Ctrl + E to jump to the end of the command line, Ctrl + W to delete only the last word you typed instead of the whole line, Ctrl + U to erase everything you have typed on the current line and start fresh.",
+            media: "assets/ubuntu-terminal-lesson2.2.mp4",
+            type:"video"
+          },
+          {
+            text: "Run two commands in a single line using &&, the second command only runs if the first one succeeds.",
+            media: "assets/ubuntu-terminal-lesson2.3.mp4",
+            type:"video"
+          },
+          {
+            text: "Use ; to run two commands one after another regardless of whether the first succeeds.",
+            media: "assets/ubuntu-terminal-lesson2.4.mp4",
+            type:"video"
+          },
+         
         ]
       }
     ],
@@ -474,7 +538,7 @@ const tutorials = {
     distro: "Ubuntu",
     title: "App Installation",
     icon: "assets/apps.png",
-    summary: "Compare terminal and graphical app installation, then install useful beginner apps.",
+    summary: "Install, Update and Remove apps",
     objectives: [
       "Understand apt update and apt install",
       "Know when to use Ubuntu Software",
@@ -483,20 +547,82 @@ const tutorials = {
     lessons: [
       {
         id: 1,
-        title: "Install Apps Safely",
+        title: "Understanding How Apps Are Installed in Ubuntu",
         steps: [
           {
-            text: "Use Ubuntu Software when you prefer a graphical app store experience.",
-            media: "assets/apps.png",
-            type: "image"
+            text: "sudo means \"superuser do\", It allows a normal user to run commands with administrator (root) privileges temporarily. APT means \"Advanced Package Tool\", It is the package manager used in Debian-based Linux distributions like Ubuntu. While snap is a type of software package used in Ubuntu and other Linux systems to install applications in a simple, self-contained way.",
+            command:"sudo , apt , snap"
           },
           {
-            text: "Use apt update before installing from the terminal so your package list is current.",
-            command: "sudo apt update"
+            text: "Open the Terminal in the Application Menu. ",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
           },
           {
-            text: "Install an app with apt install. Replace the app name with the package you need.",
-            command: "sudo apt install vlc"
+            text: "Before installing anything for the first time or after a while, always update your package list first using sudo apt update so APT knows about the latest available versions. ",
+            media: "assets/ubuntu-apps-lesson1.1.mp4",
+            type: "video"
+          },
+          {
+            text: "If there are available updates, type in sudo apt upgrade to upgrade all installed apps and system packages at once.",
+            media: "assets/ubuntu-apps-lesson1.2.mp4",
+            type: "video"
+          },
+          {
+            text: "Ubuntu's default way of installing apps is through APT using sudo apt install appName.",
+            media: "assets/ubuntu-apps-lesson1.3.mp4",
+            type: "video"
+          },
+          {
+            text: "A second way to install apps is through Snap. Type in sudo snap install appName",
+            media: "assets/ubuntu-apps-lesson1.4.mp4",
+            type: "video"
+          },
+          {
+            text: "To check what applications are installed via apt install, type in apt list --installed.",
+            media: "assets/ubuntu-apps-lesson1.5.mp4",
+            type: "video"
+          },
+          {
+            text: "To view apps installed via snap, type snap list.",
+            media: "assets/ubuntu-apps-lesson1.6.mp4",
+            type: "video"
+          },
+          {
+            text: "Type sudo snap refresh to update all applications. To update a specific Snap app only, type in sudo snap refresh appName",
+            media: "assets/ubuntu-apps-lesson1.7.mp4",
+            type: "video"
+          }
+        ]
+      },
+      {
+        id: 2,
+        title: "Removing Apps and Cleaning Up Your System",
+        steps: [
+          {
+            text: "Open the Terminal in the Application Menu. ",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          },
+          {
+            text: "To remove an app installed via APT, type sudo apt remove appName, this removes the app but leaves behind its configuration files.",
+            media: "assets/ubuntu-apps-lesson2.1.mp4",
+            type: "video"
+          },
+          {
+            text: "Remove the app and all its configuration files completely using sudo apt purge appName.",
+            media: "assets/ubuntu-apps-lesson2.2.mp4",
+            type: "video"
+          },
+          {
+            text: "To also remove the cached installation files that APT downloaded and stored locally, type sudo apt clean.",
+            media: "assets/ubuntu-apps-lesson2.3.mp4",
+            type: "video"
+          },
+          {
+            text: "And finally, to check how much disk space was recovered after cleaning up, run the command df -h",
+            media: "assets/ubuntu-apps-lesson2.4.mp4",
+            type: "video"
           }
         ]
       }
