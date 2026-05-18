@@ -72,9 +72,9 @@
   font-weight: 400;
   font-size: 18px;
   padding-left: 2%;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-right: 2%;
-  gap: 5px;
+  gap: 0px;
 }
 
 #tutorial-title{

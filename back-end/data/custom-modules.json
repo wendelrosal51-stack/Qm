@@ -31,29 +31,114 @@
       }
     ]
   },
-  "mint-test": {
-    "id": "mint-test",
+  "mint-installation": {
+    "id": "mint-installation",
     "distro": "Mint",
-    "title": "Test",
-    "icon": "assets/apps.png",
-    "summary": "Test card summary",
+    "title": "Installation",
+    "icon": "assets/install.png",
+    "summary": "Install Linux Mint and discover an open-source operating system designed for simplicity and performance.",
     "objectives": [
       "Test lesson summary"
     ],
     "lessons": [
       {
         "id": 1,
-        "title": "Test",
+        "title": "Download Linux Mint ISO file",
         "steps": [
           {
-            "text": "Test"
+            "text": "Go to https://linuxmint.com/",
+            "media":"assets/mint-install-lesson1.1.mp4",
+            "type":"video"
           },
           {
-            "text": "Practice the command shown here."
+            "text": "Select your preferred Linux Mint edition",
+            "media": "assets/mint-install-lesson1.2.mp4",
+            "type": "video"
           },
           {
-            "text": "Practice the command shown here.",
-            "command": "Test"
+            "text": "Select a mirror link to download the Mint ISO.",
+            "media": "assets/mint-install-lesson1.3.mp4",
+            "type": "video"
+          } 
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Download Rufus",
+        "steps": [
+          {
+            "text": "Open the Rufus website. Rufus is used to turn the ISO into a bootable USB installer.",
+            "media":"assets/rufus.gif",
+            "type":"img"
+          },
+          {
+            "text": "Download the latest Rufus release.",
+            "media": "assets/rufusdl.gif",
+            "type": "img"
+          },
+          {
+            "text": "Run Rufus after it finishes downloading..",
+            "media": "assets/rufusdld.gif",
+            "type": "img"
+          } 
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Create a Bootable USB",
+        "steps": [
+          {
+            "text": "Plug in your USB drive and select it under Device.",
+            "media": "assets/selectdevice.gif",
+            "type": "image"
+          },
+          {
+            "text": "Choose the Mint ISO, start the process, and confirm ISO Image mode when Rufus asks.",
+            "media": "assets/mint-rufus.mp4",
+            "type": "video",
+            "warning": "This will delete the files on the USB drive. Back up important files before continuing."
+          },
+          {
+           "text": "After Rufus finishes, keep the USB plugged in and restart the computer.",
+            "media": "assets/restartpc.gif",
+            "type": "image"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Start-Up Configurations",
+        "steps": [
+          {
+            "text": "After device restart, choose \"Start Linux Mint\" to normally start the system.",
+            "media": "assets/mint-install-lesson4.1.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Choose your preferred language along with your keyboard layout.",
+            "media": "assets/mint-install-lesson4.2.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Toggle on \"Install media codeds\", this option is recommended to support various video formats to render in some websites.",
+            "media": "assets/mint-install-lesson4.3.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Choose what type of installation you want to do. \"Erase disk and install Linux Mint\" will delete all files and programs inside your chosen drive. Choosing \"Something else\" will let you create or resize your own partitions.",
+            "media": "assets/mint-install-lesson4.4.mp4",
+            "warning":"This will delete the files on the USB drive. Back up important files before continuing.",
+            "type": "video"
+          },
+          {
+            "text": "Select your timezone. This will set your system's internal clock.",
+            "media": "assets/mint-install-lesson4.5.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Enter your account details and wait for the operating system to install.",
+            "media": "assets/mint-install-lesson4.6.mp4",
+            "type": "video"
           }
         ]
       }
@@ -65,6 +150,259 @@
         "choices": [
           "Test",
           "Test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "mint-basic-navigation": {
+    "id": "mint-basic-navigation",
+    "distro": "Mint",
+    "title": "Basic Navigation",
+    "icon": "assets/features.png",
+    "summary": "Master the fundamentals of the Linux Mint desktop by learning how to navigate the traditional layout and access the Terminal.",
+    "objectives": [],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Navigating Directories in the Terminal",
+        "steps": [
+          {
+            "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
+            "media":"assets/mint-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "View which Directory you are currently in by typing \"pwd\".",
+            "media":"assets/mint-nav-lesson1.2.mp4",
+            "type":"video"
+          },
+          {
+            "text": "List all files and folders in the current directory using \"ls\".",
+            "media":"assets/mint-nav-lesson1.3.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Change your current directory using \"cd directoryName\".",
+            "media":"assets/mint-nav-lesson1.4.mp4",
+            "type":"video"
+          },
+          {
+            "text": "\"cd ..\" allows you to go back to the previous directory.",
+            "media":"assets/mint-nav-lesson1.5.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Go back to your home director by typing \"cd ~\".",
+            "media":"assets/mint-nav-lesson1.6.mp4",
+            "type":"video"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Creating and Managing Files and Folders",
+        "steps": [
+          {
+            "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
+            "media":"assets/mint-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Create a new folder by typing \"mkdir directoryName\".",
+            "media":"assets/mint-nav-lesson2.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Create a new file: \"touch fileName.txt\" (You can also use other file types such as .html, .css, .js etc.).",
+            "media":"assets/mint-nav-lesson2.2.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Remove files by typing \"rm fileName.txt\".",
+            "media":"assets/mint-nav-lesson2.3.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Remove directories by typing \"rmdir directoryName\".",
+            "media":"assets/mint-nav-lesson2.4.mp4",
+            "warning":"You cannot remove a directory if there are files inside it.",
+            "type":"video"
+          }  
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Moving and Renaming Files and Directories",
+        "steps": [
+          {
+            "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
+            "media":"assets/mint-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "The \"cp fileName.txt\" command (copy) is used to copy files and directories.",
+            "media":"assets/mint-nav-lesson3.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "You can also specify the location of what directory the file will be copied by typing \"cp fileName path/to/directory\".",
+            "media":"assets/mint-nav-lesson3.2.mp4",
+            "type":"video"
+          },
+          {
+            "text": "The \"mv path/to/file\" command (move) is used to move files and directories.",
+            "media":"assets/mint-nav-lesson3.3.mp4",
+            "type":"video"
+          },
+          {
+            "text": "You can also use \"mv oldName.txt newName.txt\" to rename files.",
+            "media":"assets/mint-nav-lesson3.4.mp4",
+            "type":"video"
+          }  
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "test",
+        "choices": [
+          "test",
+          "test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "mint-terminal-commands": {
+    "id": "mint-terminal-commands",
+    "distro": "Mint",
+    "title": "Terminal Commands",
+    "icon": "assets/command.png",
+    "summary": "Master essential Linux Mint terminal commands to efficiently navigate files and execute administrative tasks.",
+    "objectives": [],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Viewing System Information",
+        "steps": [
+          {
+            "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
+            "media":"assets/mint-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "The uname command displays system information: \"uname -a\" to display all system information, \"uname -s\" to show only the kernel name and \"uname -r\" to display the kernel release version.",
+            "media":"assets/mint-terminal-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Type \"hostnamectl\" and press Enter to view hostname and OS information.",
+            "media":"assets/mint-terminal-lesson1.2.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Type \"df -h\" and press Enter to display disk space.",
+            "media":"assets/mint-terminal-lesson1.3.mp4",
+            "type":"video"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Network and System Monitoring Commands",
+        "steps": [
+          {
+            "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
+            "media":"assets/mint-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "The \"ping siteName.com\" command tests connectivity to a remote host.",
+            "media":"assets/mint-terminal-lesson2.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Type \"hostnamectl\" and press Enter to view hostname and OS information.",
+            "media":"assets/mint-terminal-lesson1.2.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Type \"df -h\" and press Enter to display disk space.",
+            "media":"assets/mint-terminal-lesson1.3.mp4",
+            "type":"video"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "tes",
+        "choices": [
+          "test",
+          "test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "mint-app-installation": {
+    "id": "mint-app-installation",
+    "distro": "Mint",
+    "title": "App Installation",
+    "icon": "assets/apps.png",
+    "summary": "Discover how to safely install and manage software directly from the Terminal using Mint's powerful APT package and Snap manager.",
+    "objectives": [],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "test",
+        "steps": [
+          {
+            "text": "test"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "test",
+        "choices": [
+          "test",
+          "test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "mint-troubleshoot": {
+    "id": "mint-troubleshoot",
+    "distro": "Mint",
+    "title": "Troubleshoot",
+    "icon": "assets/trouble.png",
+    "summary": "Equip yourself with the command-line tools and resolve package manager and software issues.",
+    "objectives": [],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "test",
+        "steps": [
+          {
+            "text": "test"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "test",
+        "choices": [
+          "test",
+          "test"
         ],
         "answer": 0
       }
