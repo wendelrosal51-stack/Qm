@@ -421,7 +421,7 @@ const tutorials = {
     distro: "Ubuntu",
     title: "Terminal Commands",
     icon: "assets/command.png",
-    summary: "Practice beginner terminal commands.",
+    summary: "Practice beginner Ubuntu terminal commands.",
     objectives: [
       "Open the terminal",
       "Use pwd, ls, and cd",
@@ -600,7 +600,7 @@ const tutorials = {
         title: "Removing Apps and Cleaning Up Your System",
         steps: [
           {
-            text: "Open the Terminal in the Application Menu. ",
+            text: "Open the Terminal in the Application Menu.",
             media: "assets/ubuntu-navigation-lesson1.1.mp4",
             type: "video"
           },
@@ -662,24 +662,59 @@ const tutorials = {
     lessons: [
       {
         id: 1,
-        title: "First Troubleshooting Checks",
+        title: "Unresponsive Programs and Applications",
         steps: [
           {
-            text: "Start with simple checks: restart, reconnect devices, and note any exact error messages.",
-            media: "assets/restartpc.gif",
-            type: "image"
+            text: "Open the Terminal in the Application Menu.",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
           },
           {
-            text: "For driver or display issues, check Additional Drivers before downloading random tools.",
-            media: "assets/trouble.png",
-            type: "image"
+            text: "Find the name of the unresonposive app and terminate it by name.",
+            media: "assets/ubuntu-trouble-lesson1.1.mp4",
+            type: "video"
           },
           {
-            text: "Use recovery mode only when normal startup fails or you need repair options.",
-            media: "assets/recovery.webp",
-            type: "image",
-            warning: "Do not run repair commands you do not understand. Write down the issue first."
-          }
+            text: "If that does not work, find the exact Process ID (PID) of the frozen app by typing pgrep appName, then use kill -9 appPID to force close the app.",
+            media: "assets/ubuntu-trouble-lesson1.2.mp4",
+            type: "video",
+          },
+          {
+            text: "If the entire desktop is unresponsive, try switching to a virtual console by pressing Ctrl + alt + f3. Log in with your username and password, then kill the frozen app from there using pkill or kill. Switch back to desktop using ctrl + alt + f2.",
+            media: "assets/ubuntu-trouble-lesson1.3.mp4",
+            type: "video",
+          },
+          {
+            text: "As a last resort if nothing works, do a safe system restart from the terminal by typing sudo reboot -f",
+            media: "assets/ubuntu-trouble-lesson1.4.mp4",
+            type: "video",
+          },
+        ]
+      },
+      {
+        id: 2,
+        title: "Broken or Incomplete Software Installation",
+        steps: [
+          {
+            text: "Open the Terminal in the Application Menu.",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          },
+          {
+            text: "The most common fix for broken installations is sudo apt install -f, stands for \"fix broken\". This automatically detects and repairs incomplete or broken package installations.",
+            media: "assets/ubuntu-trouble-lesson2.1.mp4",
+            type: "video"
+          },
+          {
+            text: " If that does not fully fix it, try reconfiguring all unpacked but unconfigured packages using sudo dpkg --configure -a.",
+            media: "assets/ubuntu-trouble-lesson2.2.mp4",
+            type: "video",
+          },
+          {
+            text: "Clear the local package cache in case a downloaded package file is corrupted by typing sudo apt clean. Then refresh the package list and try upgrading again using sudo apt update && sudo apt upgrade.",
+            media: "assets/ubuntu-trouble-lesson2.4.mp4",
+            type: "video",
+          },
         ]
       }
     ],
