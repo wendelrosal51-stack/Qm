@@ -1,4 +1,5 @@
 const tutorials = {
+  // marker1
   "ubuntu-installation": {
     id: "ubuntu-installation",
     distro: "Ubuntu",
@@ -738,7 +739,174 @@ const tutorials = {
         answer: 0
       }
     ]
+  },
+  // marker2
+  "mint-installation": {
+    id: "mint-installation",
+    distro: "Mint",
+    title: "Installation",
+    icon: "assets/installation.png",
+    summary: "Learn safe first checks for common Ubuntu problems before trying risky fixes.",
+    objectives: [
+      "Restart and observe error messages",
+      "Check network, updates, and drivers",
+      "Know when to use recovery mode carefully"
+    ],
+    lessons: [
+      {
+        id: 1,
+        title: "Unresponsive Programs and Applications",
+        steps: [
+          {
+            text: "Open the Terminal in the Application Menu.",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          }
+        ]
+      },
+    ],
+    quiz: [
+      {
+        id: 1,
+        question: "What should you write down when troubleshooting?",
+        choices: ["The exact error message or behavior", "Only the wallpaper color", "The quiz score", "The browser theme"],
+        answer: 0
+      }
+    ]
+  },
+  "mint-navigation": {
+    id: "mint-navigation",
+    distro: "Mint",
+    title: "Basic Navigation",
+    icon: "assets/features.png",
+    summary: "Learn safe first checks for common Ubuntu problems before trying risky fixes.",
+    objectives: [
+      "Restart and observe error messages",
+      "Check network, updates, and drivers",
+      "Know when to use recovery mode carefully"
+    ],
+    lessons: [
+      {
+        id: 1,
+        title: "Unresponsive Programs and Applications",
+        steps: [
+          {
+            text: "Open the Terminal in the Application Menu.",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          }
+        ]
+      },
+    ],
+    quiz: [
+      {
+        id: 1,
+        question: "What should you write down when troubleshooting?",
+        choices: ["The exact error message or behavior", "Only the wallpaper color", "The quiz score", "The browser theme"],
+        answer: 0
+      }
+    ]
+  },
+  "mint-commands": {
+    id: "mint-commands",
+    distro: "Mint",
+    title: "Terminal Commands",
+    icon: "assets/commands.png",
+    summary: "Learn safe first checks for common Ubuntu problems before trying risky fixes.",
+    objectives: [
+      "Restart and observe error messages",
+      "Check network, updates, and drivers",
+      "Know when to use recovery mode carefully"
+    ],
+    lessons: [
+      {
+        id: 1,
+        title: "Unresponsive Programs and Applications",
+        steps: [
+          {
+            text: "Open the Terminal in the Application Menu.",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          }
+        ]
+      },
+    ],
+    quiz: [
+      {
+        id: 1,
+        question: "What should you write down when troubleshooting?",
+        choices: ["The exact error message or behavior", "Only the wallpaper color", "The quiz score", "The browser theme"],
+        answer: 0
+      }
+    ]
+  },
+  "mint-apps": {
+    id: "mint-apps",
+    distro: "Mint",
+    title: "App Installation",
+    icon: "assets/apps.png",
+    summary: "Learn safe first checks for common Ubuntu problems before trying risky fixes.",
+    objectives: [
+      "Restart and observe error messages",
+      "Check network, updates, and drivers",
+      "Know when to use recovery mode carefully"
+    ],
+    lessons: [
+      {
+        id: 1,
+        title: "Unresponsive Programs and Applications",
+        steps: [
+          {
+            text: "Open the Terminal in the Application Menu.",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          }
+        ]
+      },
+    ],
+    quiz: [
+      {
+        id: 1,
+        question: "What should you write down when troubleshooting?",
+        choices: ["The exact error message or behavior", "Only the wallpaper color", "The quiz score", "The browser theme"],
+        answer: 0
+      }
+    ]
+  },
+  "mint-troubleshooting": {
+    id: "mint-troubleshooting",
+    distro: "Mint",
+    title: "Troubleshooting",
+    icon: "assets/trouble.png",
+    summary: "Learn safe first checks for common Ubuntu problems before trying risky fixes.",
+    objectives: [
+      "Restart and observe error messages",
+      "Check network, updates, and drivers",
+      "Know when to use recovery mode carefully"
+    ],
+    lessons: [
+      {
+        id: 1,
+        title: "Unresponsive Programs and Applications",
+        steps: [
+          {
+            text: "Open the Terminal in the Application Menu.",
+            media: "assets/ubuntu-navigation-lesson1.1.mp4",
+            type: "video"
+          }
+        ]
+      },
+    ],
+    quiz: [
+      {
+        id: 1,
+        question: "What should you write down when troubleshooting?",
+        choices: ["The exact error message or behavior", "Only the wallpaper color", "The quiz score", "The browser theme"],
+        answer: 0
+      }
+    ]
   }
+
 };
 
 const moduleOrder = [

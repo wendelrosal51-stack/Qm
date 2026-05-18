@@ -1,1 +1,73 @@
-{}
+{
+  "fedora-installation": {
+    "id": "fedora-installation",
+    "distro": "Fedora",
+    "title": "Installation",
+    "icon": "assets/apps.png",
+    "summary": "fedora test",
+    "objectives": [
+      "fedora test"
+    ],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "fedora test",
+        "steps": [
+          {
+            "text": "fedora test"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "fedora test",
+        "choices": [
+          "fedora test",
+          "fedora test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "mint-test": {
+    "id": "mint-test",
+    "distro": "Mint",
+    "title": "Test",
+    "icon": "assets/apps.png",
+    "summary": "Test card summary",
+    "objectives": [
+      "Test lesson summary"
+    ],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Test",
+        "steps": [
+          {
+            "text": "Test"
+          },
+          {
+            "text": "Practice the command shown here."
+          },
+          {
+            "text": "Practice the command shown here.",
+            "command": "Test"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "Test",
+        "choices": [
+          "Test",
+          "Test"
+        ],
+        "answer": 0
+      }
+    ]
+  }
+}
