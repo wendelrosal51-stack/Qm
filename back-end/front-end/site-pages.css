@@ -110,7 +110,6 @@
   letter-spacing: 0.02em;
 }
 
-
 .card > p {
   padding: 1.2rem 1rem;
   font-size: 0.88rem;
@@ -121,4 +120,120 @@
 
 .card > p.description {
   text-align: left;
+}
+
+.distro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #e7e7e7;
+  align-items: center;
+  padding: 3rem 1rem 4rem;
+  gap: 2rem;
+}
+
+.ubuntu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  border-radius: 12px;
+  background-color: #f8f7f7a3;
+  /* border: solid black; */
+  border-left: 15px solid #e19d54;
+  margin-top: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.ubuntu:hover {
+  transform: translateY(-4px);
+}
+
+.fedora {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  border-radius: 12px;
+  background-color: #f8f7f7a3;
+  border: none;
+  border-left: 15px solid #1a609d;
+  margin-top: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.fedora:hover {
+  transform: translateY(-4px);
+}
+
+.mint {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  border-radius: 12px;
+  background-color: #f8f7f7a3;
+  border: none;
+  border-left: 15px solid #3fd351;
+  margin-top: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.mint:hover {
+  transform: translateY(-4px);
+}
+
+.arch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  border-radius: 12px;
+  background-color: #f8f7f7a3;
+  border: none;
+  border-left: 15px solid #469eec;
+  margin-top: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.arch:hover {
+  transform: translateY(-4px);
+}
+
+.manjaro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  border-radius: 12px;
+  background-color: #f8f7f7a3;
+  border: none;
+  border-left: 15px solid #38c996;
+  margin-top: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.manjaro:hover {
+  transform: translateY(-4px);
+}
+
+.distrodesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  padding: 2.5rem 3rem;
+  text-align: justify;
+  gap: 0.75rem;
+}
+
+.distro img {
+  width: 20%;
+  padding: 1.5rem;
+  opacity: 0.92;
 }
