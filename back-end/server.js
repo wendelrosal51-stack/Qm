@@ -9,7 +9,7 @@ require('dotenv').config();
 const { tutorials, moduleOrder } = require('./data/tutorials');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const customModulesPath = path.join(__dirname, 'data/custom-modules.json');
 
 app.use(express.static(path.join(__dirname, '../front-end')));
