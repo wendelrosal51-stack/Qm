@@ -10,7 +10,7 @@ const { tutorials, moduleOrder } = require('./data/tutorials');
 
 const app = express();
 const port = process.env.PORT || 3000;
-const frontEndPath = path.join(__dirname, '..', 'front-end');
+const frontEndPath = path.join(__dirname, 'front-end');
 console.log('__dirname:', __dirname);
 console.log('frontEndPath:', frontEndPath);
 const customModulesPath = path.join(__dirname, 'data/custom-modules.json');
