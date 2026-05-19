@@ -1,8 +1,0 @@
-{
-    "name": "qm",
-    "version": "1.0.0",
-    "scripts": {
-      "start": "node back-end/server.js",
-      "install-deps": "npm install --prefix back-end"
-    }
-  }
