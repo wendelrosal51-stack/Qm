@@ -1,15 +1,25 @@
-body{
+/* ── Base reset ── */
+body {
     padding-top: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.signup-container{
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* ══════════════════════════════════════
+   DEFAULT / DESKTOP  (1280px and up)
+══════════════════════════════════════ */
+.signup-container {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.leftSide{
+.leftSide {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -18,21 +28,22 @@ body{
     justify-content: center;
 }
 
-.rightSide{
+.rightSide {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    /* position:relative; */
     width: 50%;
     background-color: #666060;
+    padding: 40px 20px;
 }
-#peng{
+
+#peng {
     margin-top: 5%;
     width: 8rem;
 }
 
-.input-section{
+.input-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,9 +52,10 @@ body{
     height: fit-content;
     gap: 40px;
     border-radius: 10px;
+    padding: 30px 0;
 }
 
-input{
+input {
     width: 80%;
     height: 3rem;
     font-size: 100%;
@@ -56,19 +68,19 @@ input{
     background-size: contain;
 }
 
-#signup-username{
+#signup-username {
     background-image: url(assets/profile.white.png);
 }
 
-#signup-password{
+#signup-password {
     background-image: url(assets/lock.png);
 }
-#confpassword{
+
+#confpassword {
     background-image: url(assets/confirmpass.png);
 }
 
-
-.sign-button{
+.sign-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,17 +92,178 @@ input{
     font-size: 25px;
     background-color: #66ff66;
     transition: background-color 0.25s;
+    cursor: pointer;
 }
 
-.sign-button:hover{
+.sign-button:hover {
     background-color: #24Ea24;
 }
 
-#toggle{
+#toggle {
     margin-bottom: 2px;
 }
 
 
-@media screen {
-    
+/* ══════════════════════════════════════
+   LAPTOP  (1024px – 1279px)
+══════════════════════════════════════ */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .leftSide {
+        font-size: 6rem;
+    }
+
+    #peng {
+        width: 7rem;
+    }
+
+    .rightSide {
+        gap: 35px;
+        padding: 30px 16px;
+    }
+
+    .input-section {
+        gap: 30px;
+        padding: 24px 0;
+    }
+
+    input {
+        height: 2.75rem;
+        font-size: 95%;
+    }
+
+    .sign-button {
+        width: 180px;
+        height: 46px;
+        font-size: 22px;
+    }
+}
+
+
+/* ══════════════════════════════════════
+   TABLET  (768px – 1023px)
+══════════════════════════════════════ */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .leftSide {
+        width: 100%;
+        font-size: 5rem;
+        padding: 40px 20px;
+        min-height: 25vh;
+    }
+
+    .rightSide {
+        width: 100%;
+        gap: 30px;
+        padding: 30px 20px 40px;
+    }
+
+    #peng {
+        width: 6.5rem;
+        margin-top: 0;
+    }
+
+    .input-section {
+        width: 80%;
+        gap: 28px;
+        padding: 24px 0;
+    }
+
+    input {
+        height: 2.75rem;
+        font-size: 95%;
+    }
+
+    .sign-button {
+        width: 170px;
+        height: 46px;
+        font-size: 21px;
+    }
+}
+
+
+/* ══════════════════════════════════════
+   MOBILE  (up to 767px)
+══════════════════════════════════════ */
+@media screen and (max-width: 767px) {
+    .signup-container {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .leftSide {
+        width: 100%;
+        font-size: 3.5rem;
+        padding: 30px 16px 20px;
+        min-height: 18vh;
+        justify-content: center;
+    }
+
+    .rightSide {
+        width: 100%;
+        gap: 24px;
+        padding: 20px 16px 36px;
+    }
+
+    #peng {
+        width: 5.5rem;
+        margin-top: 0;
+    }
+
+    .input-section {
+        width: 95%;
+        gap: 24px;
+        padding: 20px 0;
+        border-radius: 8px;
+    }
+
+    input {
+        width: 85%;
+        height: 2.5rem;
+        font-size: 90%;
+        padding-left: 42px;
+    }
+
+    .sign-button {
+        width: 150px;
+        height: 44px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+}
+
+
+/* ══════════════════════════════════════
+   SMALL MOBILE  (up to 400px)
+══════════════════════════════════════ */
+@media screen and (max-width: 400px) {
+    .leftSide {
+        font-size: 2.8rem;
+        padding: 24px 12px 16px;
+    }
+
+    #peng {
+        width: 4.5rem;
+    }
+
+    .input-section {
+        width: 98%;
+        gap: 20px;
+        padding: 16px 0;
+    }
+
+    input {
+        height: 2.25rem;
+        font-size: 85%;
+        padding-left: 36px;
+    }
+
+    .sign-button {
+        width: 135px;
+        height: 40px;
+        font-size: 16px;
+    }
 }

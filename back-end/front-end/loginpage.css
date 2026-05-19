@@ -220,9 +220,9 @@ input{
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .leftSide {
-    font-size: 5rem;
+    font-size: 7.8rem;
   }
 
   .input-section {
