@@ -1,36 +1,4 @@
 {
-  "fedora-installation": {
-    "id": "fedora-installation",
-    "distro": "Fedora",
-    "title": "Installation",
-    "icon": "assets/apps.png",
-    "summary": "fedora test",
-    "objectives": [
-      "fedora test"
-    ],
-    "lessons": [
-      {
-        "id": 1,
-        "title": "fedora test",
-        "steps": [
-          {
-            "text": "fedora test"
-          }
-        ]
-      }
-    ],
-    "quiz": [
-      {
-        "id": 1,
-        "question": "fedora test",
-        "choices": [
-          "fedora test",
-          "fedora test"
-        ],
-        "answer": 0
-      }
-    ]
-  },
   "mint-installation": {
     "id": "mint-installation",
     "distro": "Mint",
@@ -47,8 +15,8 @@
         "steps": [
           {
             "text": "Go to https://linuxmint.com/",
-            "media":"assets/mint-install-lesson1.1.mp4",
-            "type":"video"
+            "media": "assets/mint-install-lesson1.1.mp4",
+            "type": "video"
           },
           {
             "text": "Select your preferred Linux Mint edition",
@@ -59,7 +27,7 @@
             "text": "Select a mirror link to download the Mint ISO.",
             "media": "assets/mint-install-lesson1.3.mp4",
             "type": "video"
-          } 
+          }
         ]
       },
       {
@@ -68,8 +36,8 @@
         "steps": [
           {
             "text": "Open the Rufus website. Rufus is used to turn the ISO into a bootable USB installer.",
-            "media":"assets/rufus.gif",
-            "type":"img"
+            "media": "assets/rufus.gif",
+            "type": "img"
           },
           {
             "text": "Download the latest Rufus release.",
@@ -80,7 +48,7 @@
             "text": "Run Rufus after it finishes downloading..",
             "media": "assets/rufusdld.gif",
             "type": "img"
-          } 
+          }
         ]
       },
       {
@@ -99,7 +67,7 @@
             "warning": "This will delete the files on the USB drive. Back up important files before continuing."
           },
           {
-           "text": "After Rufus finishes, keep the USB plugged in and restart the computer.",
+            "text": "After Rufus finishes, keep the USB plugged in and restart the computer.",
             "media": "assets/restartpc.gif",
             "type": "image"
           }
@@ -127,7 +95,7 @@
           {
             "text": "Choose what type of installation you want to do. \"Erase disk and install Linux Mint\" will delete all files and programs inside your chosen drive. Choosing \"Something else\" will let you create or resize your own partitions.",
             "media": "assets/mint-install-lesson4.4.mp4",
-            "warning":"This will delete the files on the USB drive. Back up important files before continuing.",
+            "warning": "This will delete the files on the USB drive. Back up important files before continuing.",
             "type": "video"
           },
           {
@@ -169,33 +137,33 @@
         "steps": [
           {
             "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
-            "media":"assets/mint-nav-lesson1.1.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.1.mp4",
+            "type": "video"
           },
           {
             "text": "View which Directory you are currently in by typing \"pwd\".",
-            "media":"assets/mint-nav-lesson1.2.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.2.mp4",
+            "type": "video"
           },
           {
             "text": "List all files and folders in the current directory using \"ls\".",
-            "media":"assets/mint-nav-lesson1.3.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.3.mp4",
+            "type": "video"
           },
           {
             "text": "Change your current directory using \"cd directoryName\".",
-            "media":"assets/mint-nav-lesson1.4.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.4.mp4",
+            "type": "video"
           },
           {
             "text": "\"cd ..\" allows you to go back to the previous directory.",
-            "media":"assets/mint-nav-lesson1.5.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.5.mp4",
+            "type": "video"
           },
           {
             "text": "Go back to your home director by typing \"cd ~\".",
-            "media":"assets/mint-nav-lesson1.6.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.6.mp4",
+            "type": "video"
           }
         ]
       },
@@ -205,30 +173,30 @@
         "steps": [
           {
             "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
-            "media":"assets/mint-nav-lesson1.1.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.1.mp4",
+            "type": "video"
           },
           {
             "text": "Create a new folder by typing \"mkdir directoryName\".",
-            "media":"assets/mint-nav-lesson2.1.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson2.1.mp4",
+            "type": "video"
           },
           {
             "text": "Create a new file: \"touch fileName.txt\" (You can also use other file types such as .html, .css, .js etc.).",
-            "media":"assets/mint-nav-lesson2.2.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson2.2.mp4",
+            "type": "video"
           },
           {
             "text": "Remove files by typing \"rm fileName.txt\".",
-            "media":"assets/mint-nav-lesson2.3.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson2.3.mp4",
+            "type": "video"
           },
           {
             "text": "Remove directories by typing \"rmdir directoryName\".",
-            "media":"assets/mint-nav-lesson2.4.mp4",
-            "warning":"You cannot remove a directory if there are files inside it.",
-            "type":"video"
-          }  
+            "media": "assets/mint-nav-lesson2.4.mp4",
+            "warning": "You cannot remove a directory if there are files inside it.",
+            "type": "video"
+          }
         ]
       },
       {
@@ -237,29 +205,29 @@
         "steps": [
           {
             "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
-            "media":"assets/mint-nav-lesson1.1.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.1.mp4",
+            "type": "video"
           },
           {
             "text": "The \"cp fileName.txt\" command (copy) is used to copy files and directories.",
-            "media":"assets/mint-nav-lesson3.1.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson3.1.mp4",
+            "type": "video"
           },
           {
             "text": "You can also specify the location of what directory the file will be copied by typing \"cp fileName path/to/directory\".",
-            "media":"assets/mint-nav-lesson3.2.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson3.2.mp4",
+            "type": "video"
           },
           {
             "text": "The \"mv path/to/file\" command (move) is used to move files and directories.",
-            "media":"assets/mint-nav-lesson3.3.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson3.3.mp4",
+            "type": "video"
           },
           {
             "text": "You can also use \"mv oldName.txt newName.txt\" to rename files.",
-            "media":"assets/mint-nav-lesson3.4.mp4",
-            "type":"video"
-          }  
+            "media": "assets/mint-nav-lesson3.4.mp4",
+            "type": "video"
+          }
         ]
       }
     ],
@@ -289,23 +257,23 @@
         "steps": [
           {
             "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
-            "media":"assets/mint-nav-lesson1.1.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.1.mp4",
+            "type": "video"
           },
           {
             "text": "The uname command displays system information: \"uname -a\" to display all system information, \"uname -s\" to show only the kernel name and \"uname -r\" to display the kernel release version.",
-            "media":"assets/mint-terminal-lesson1.1.mp4",
-            "type":"video"
+            "media": "assets/mint-terminal-lesson1.1.mp4",
+            "type": "video"
           },
           {
             "text": "Type \"hostnamectl\" and press Enter to view hostname and OS information.",
-            "media":"assets/mint-terminal-lesson1.2.mp4",
-            "type":"video"
+            "media": "assets/mint-terminal-lesson1.2.mp4",
+            "type": "video"
           },
           {
             "text": "Type \"df -h\" and press Enter to display disk space.",
-            "media":"assets/mint-terminal-lesson1.3.mp4",
-            "type":"video"
+            "media": "assets/mint-terminal-lesson1.3.mp4",
+            "type": "video"
           }
         ]
       },
@@ -315,34 +283,34 @@
         "steps": [
           {
             "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
-            "media":"assets/mint-nav-lesson1.1.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.1.mp4",
+            "type": "video"
           },
           {
             "text": "The \"ping siteName.com\" command tests connectivity to a remote host.",
-            "media":"assets/mint-terminal-lesson2.1.mp4",
-            "type":"video"
+            "media": "assets/mint-terminal-lesson2.1.mp4",
+            "type": "video"
           },
           {
             "text": "\"traceroute websiteName.com\" shows the path packets take to reach a destination.",
-            "media":"assets/mint-terminal-lesson2.2.mp4",
-            "type":"video"
+            "media": "assets/mint-terminal-lesson2.2.mp4",
+            "type": "video"
           },
           {
             "text": "The \"ifconfig\" command displays network interface information.",
-            "media":"assets/mint-terminal-lesson2.3.mp4",
-            "type":"video"
+            "media": "assets/mint-terminal-lesson2.3.mp4",
+            "type": "video"
           },
           {
             "text": "The \"ip\" command is the modern replacement with more features. ip addr show to display IP addresses of all interfaces, ip route show to display the routing table and ip link show to display link layer information.",
-            "media":"assets/mint-terminal-lesson2.4.mp4",
-            "type":"video"
+            "media": "assets/mint-terminal-lesson2.4.mp4",
+            "type": "video"
           },
           {
             "text": "Type \"top\" and press Enter to display real-time system statistics (press q to quit)..",
-            "media":"assets/mint-terminal-lesson2.5.mp4",
-            "type":"video"
-          } 
+            "media": "assets/mint-terminal-lesson2.5.mp4",
+            "type": "video"
+          }
         ]
       }
     ],
@@ -358,6 +326,8 @@
       }
     ]
   },
+
+  
   "mint-app-installation": {
     "id": "mint-app-installation",
     "distro": "Mint",
@@ -372,42 +342,42 @@
         "steps": [
           {
             "text": "Linux Mint uses the APT (Advanced Package Tool) package manager to install, update, and remove software. APT manages software packages from repositories. A repository is a remote server that stores software packages.",
-            "command":"sudo apt"
+            "command": "sudo apt"
           },
           {
             "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
-            "media":"assets/mint-nav-lesson1.1.mp4",
-            "type":"video"
+            "media": "assets/mint-nav-lesson1.1.mp4",
+            "type": "video"
           },
           {
             "text": "To find packages before installing them, use the \"apt search\" command.",
-            "media":"assets/mint-apps-lesson1.2.mp4",
-            "type":"video"
+            "media": "assets/mint-apps-lesson1.2.mp4",
+            "type": "video"
           },
           {
             "text": "To get detailed information about a package before installing it, use \"apt show\".",
-            "media":"assets/mint-apps-lesson1.3.mp4",
-            "type":"video"
+            "media": "assets/mint-apps-lesson1.3.mp4",
+            "type": "video"
           },
           {
             "text": "To install a package, use the \"sudo apt install appName\" command.",
-            "media":"assets/mint-apps-lesson1.4.mp4",
-            "type":"video"
+            "media": "assets/mint-apps-lesson1.4.mp4",
+            "type": "video"
           },
           {
             "text": "To view installed packages on your system, use \"apt list\" command.",
-            "media":"assets/mint-apps-lesson1.5.mp4",
-            "type":"video"
+            "media": "assets/mint-apps-lesson1.5.mp4",
+            "type": "video"
           },
           {
             "text": "Type \"apt list --upgradable\" and press Enter to see packages that can be upgraded.",
-            "media":"assets/mint-apps-lesson1.6.mp4",
-            "type":"video"
+            "media": "assets/mint-apps-lesson1.6.mp4",
+            "type": "video"
           },
           {
             "text": "To update installed packages to their latest versions, use \"sudo apt upgrade\".",
-            "media":"assets/mint-apps-lesson1.7.mp4",
-            "type":"video"
+            "media": "assets/mint-apps-lesson1.7.mp4",
+            "type": "video"
           }
         ]
       }
@@ -430,6 +400,270 @@
     "title": "Troubleshoot",
     "icon": "assets/trouble.png",
     "summary": "Equip yourself with the command-line tools and resolve package manager and software issues.",
+    "objectives": [],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Managing Frozen Processes and Resource Exhaustion",
+        "steps": [
+          {
+            "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
+            "media": "assets/mint-nav-lesson1.1.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Identify the Rogue Process in Real-Time, type \"htop\" to open process manager.",
+            "media": "assets/mint-trouble-lesson1.1.mp4",
+            "warning": "If htop is unavailable, type in \"sudo apt install htop\".",
+            "type": "video"
+          },
+          {
+            "text": "If htop is too cluttered, search for the exact PID of the malfunctioning application by its name using \"pgrep -l appName\".",
+            "media": "assets/mint-trouble-lesson1.2.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Terminate the unresponsive application by typing \"kill appPID\".",
+            "media": "assets/mint-trouble-lesson1.3.mp4",
+            "type": "video"
+          },
+          {
+            "text": "If the application is completely frozen and ignores the previous command, force it to close immediately using \"kill -9 appPID\".",
+            "media": "assets/mint-trouble-lesson1.4.mp4",
+            "type": "video"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "test",
+        "choices": [
+          "test",
+          "test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "fedora-installation": {
+    "id": "fedora-installation",
+    "distro": "Fedora",
+    "title": "Installation",
+    "icon": "assets/install.png",
+    "summary": "Essential steps to install Fedora Linux on your system, from downloading the ISO to completing your first boot.",
+    "objectives": [
+      "fedora test"
+    ],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Download Linux Fedora ISO file.",
+        "steps": [
+          {
+            "text": "Go to \"https://fedoraproject.org/\"",
+            "media": "assets/fedora-install-lesson1.1.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Scroll down to see the Fedora Editions, Choose \"Fedora KDE Plasma for Desktop\" for a much user-friendly Fedora environment then click \"Download Now\"",
+            "media": "assets/fedora-install-lesson1.2.mp4",
+            "type": "video"
+          },
+          {
+            "text": "In the Download page, click the download button for \"Intel and AMD x86_64 systems\" ISO file.",
+            "media": "assets/fedora-install-lesson1.3.mp4",
+            "type": "video"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Download Rufus",
+        "steps": [
+          {
+            "text": "Open the Rufus website. Rufus is used to turn the ISO into a bootable USB installer.",
+            "media": "assets/rufus.gif",
+            "type": "img"
+          },
+          {
+            "text": "Download the latest Rufus release.",
+            "media": "assets/rufusdl.gif",
+            "type": "img"
+          },
+          {
+            "text": "Run Rufus after it finishes downloading..",
+            "media": "assets/rufusdld.gif",
+            "type": "img"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Create a Bootable USB",
+        "steps": [
+          {
+            "text": "Plug in your USB drive and select it under Device.",
+            "media": "assets/selectdevice.gif",
+            "type": "image"
+          },
+          {
+            "text": "Choose the Fedora ISO, start the process, and confirm ISO Image mode when Rufus asks.",
+            "media": "assets/fedora-rufus.mp4",
+            "type": "video",
+            "warning": "This will delete the files on the USB drive. Back up important files before continuing."
+          },
+          {
+            "text": "After Rufus finishes, keep the USB plugged in and restart the computer.",
+            "media": "assets/restartpc.gif",
+            "type": "image"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Fedora Start-Up Configurations",
+        "steps": [
+          {
+            "text": "After system restart, choose whether to install Fedora in your hard drive or keep exploring it's environment without installing.",
+            "media": "assets/fedora-install-lesson4.1.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Choose the Fedora ISO, start the process, and confirm ISO Image mode when Rufus asks.",
+            "media": "assets/fedora-rufus.mp4",
+            "type": "video",
+            "warning": "This will delete the files on the USB drive. Back up important files before continuing."
+          },
+          {
+            "text": "After Rufus finishes, keep the USB plugged in and restart the computer.",
+            "media": "assets/restartpc.gif",
+            "type": "image"
+          }
+        ]
+      }
+    ], 
+    "quiz": [
+      {
+        "id": 1,
+        "question": "test fedora",
+        "choices": [
+          "test",
+          "test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "fedora-basic-navigation": {
+    "id": "fedora-basic-navigation",
+    "distro": "Fedora",
+    "title": "Basic Navigation",
+    "icon": "assets/features.png",
+    "summary": "test",
+    "objectives": [],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "test",
+        "steps": [
+          {
+            "text": "test"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "test",
+        "choices": [
+          "test",
+          "test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "fedora-terminal-commands": {
+    "id": "fedora-terminal-commands",
+    "distro": "Fedora",
+    "title": "Terminal Commands",
+    "icon": "assets/command.png",
+    "summary": "test",
+    "objectives": [],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "test",
+        "steps": [
+          {
+            "text": "test"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "test",
+        "choices": [
+          "test",
+          "test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "fedora-app-installation": {
+    "id": "fedora-app-installation",
+    "distro": "Fedora",
+    "title": "App Installation",
+    "icon": "assets/apps.png",
+    "summary": "Test",
+    "objectives": [],
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Download Linux Fedora ISO file.",
+        "steps": [
+          {
+            "text": "Go to \"https://fedoraproject.org/\"",
+            "media": "assets/fedora-install-lesson1.1.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Scroll down to see the Fedora Editions, Choose \"Fedora KDE Plasma for Desktop\" for a much user-friendly Fedora environment, click \"Download Now\"",
+            "media": "assets/fedora-install-lesson1.2.mp4",
+            "type": "video"
+          },
+          {
+            "text": "In the Download page, click the download button for \"Intel and AMD x86_64 systems\" ISO file.",
+            "media": "assets/fedora-install-lesson1.3.mp4",
+            "type": "video"
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "question": "test",
+        "choices": [
+          "test",
+          "test"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "fedora-troubleshooting": {
+    "id": "fedora-troubleshooting",
+    "distro": "Fedora",
+    "title": "Troubleshooting",
+    "icon": "assets/trouble.png",
+    "summary": "test",
     "objectives": [],
     "lessons": [
       {
