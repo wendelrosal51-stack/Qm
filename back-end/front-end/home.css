@@ -1,8 +1,18 @@
-body{
-    padding-top: 66px;
+/* ── Base reset ── */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-.hero{
+/* ══════════════════════════════════════
+   DEFAULT / DESKTOP  (1280px and up)
+══════════════════════════════════════ */
+body {
+    padding-top: 66px;
+    margin: 0;
+}
+
+/* Hero */
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,14 +22,14 @@ body{
     gap: 1px;
 }
 
-#learn{
+#learn {
     font-size: 4.3rem;
     color: #24Ea24;
     font-weight: 900;
     letter-spacing: 0.2rem;
 }
 
-h2{
+h2 {
     font-size: 2.3rem;
     color: #ffffff;
     font-weight: 100;
@@ -32,7 +42,8 @@ h2{
     margin-top: 2%;
 }
 
-.about{
+/* About */
+.about {
     margin-top: 80px;
     display: flex;
     flex-direction: row;
@@ -41,7 +52,7 @@ h2{
     gap: 1px;
 }
 
-.left{
+.left {
     width: 50rem;
     height: 20rem;
     font-size: 5rem;
@@ -50,7 +61,7 @@ h2{
     font-weight: 700;
 }
 
-.right{
+.right {
     width: 100rem;
     height: 20rem;
     font-size: 1.47rem;
@@ -60,14 +71,15 @@ h2{
     padding-right: 50px;
 }
 
-hr{
+hr {
     color: #24Ea24;
     border-top: 1px solid #24Ea24;
     width: 70rem;
     margin-top: 4rem;
 }
 
-.tutorial-container{
+/* Tutorials */
+.tutorial-container {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -75,49 +87,50 @@ hr{
     margin-left: 3rem;
     margin-top: 4rem;
     flex-wrap: wrap;
-    gap:  80px 280px;
+    gap: 80px 280px;
 }
 
-.start{
+.start {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding-top: 20px;
 }
 
-.tutorial{
+.tutorial {
     width: 30%;
     line-height: 1.5;
     font-size: 1.5rem;
     text-align: start;
 }
 
-#let{
+/* Distro section */
+#let {
     font-size: 70px;
     font-weight: bold;
     text-align: center;
     margin-top: 2%;
 }
 
-#select{
+#select {
     font-weight: 50;
     font-size: 2rem;
     text-align: center;
     margin-top: 2%;
 }
 
-.distro-container{
+.distro-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px;              
-    margin-top: 5vw;       
+    gap: 100px;
+    margin-top: 5vw;
     padding: 10px;
 }
 
-.distro-card{
+.distro-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
     width: 370px;
     height: 300px;
     text-align: center;
@@ -125,36 +138,352 @@ hr{
     font-size: 2.5rem;
     font-weight: 200;
     border: solid black;
-    box-shadow: 0 10px 10px rgba(12, 12, 12, 0.873);  
+    box-shadow: 0 10px 10px rgba(12, 12, 12, 0.873);
     transition: all 0.5s ease;
 }
 
-.distro-card:hover{
+.distro-card:hover {
     transform: translateY(-10px);
 }
 
-.distro-card img{
+.distro-card img {
     padding: 2%;
     width: 240px;
     align-self: center;
     object-fit: cover;
 }
 
-.ubuntu{
-    background-color: #f3c4a2;
+.ubuntu { background-color: #f3c4a2; }
+.mint   { background-color: #a9e39d; }
+.fedora { background-color: #9ecbf5; }
+
+
+/* ══════════════════════════════════════
+   LAPTOP  (1024px – 1279px)
+══════════════════════════════════════ */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    #learn {
+        font-size: 3.6rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+        letter-spacing: 0.4rem;
+    }
+
+    .hero {
+        height: 26rem;
+    }
+
+    .hero img {
+        width: 8.5rem;
+    }
+
+    .about {
+        margin-top: 60px;
+        height: auto;
+    }
+
+    .left {
+        padding-top: 2rem;
+        width: 35%;
+        font-size: 3.8rem;
+        height: auto;
+    }
+
+    .right {
+        width: 65%;
+        font-size: 1.2rem;
+        padding-right: 30px;
+        height: auto;
+    }
+
+    hr {
+        width: 85%;
+        margin-top: 3rem;
+    }
+
+    .tutorial-container {
+        gap: 60px 180px;
+        margin-left: 1.5rem;
+    }
+
+    .tutorial {
+        font-size: 1.3rem;
+    }
+
+    #let {
+        font-size: 58px;
+    }
+
+    #select {
+        font-size: 1.7rem;
+    }
+
+    .distro-container {
+        gap: 60px;
+    }
+
+    .distro-card {
+        width: 310px;
+        height: 265px;
+        font-size: 2.1rem;
+    }
+
+    .distro-card img {
+        width: 200px;
+    }
 }
 
-.mint{
-    background-color: #a9e39d;
+
+/* ══════════════════════════════════════
+   TABLET  (768px – 1023px)
+══════════════════════════════════════ */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        padding-top: 56px;
+    }
+
+    #learn {
+        font-size: 3rem;
+        letter-spacing: 0.15rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .hero {
+        height: 22rem;
+    }
+
+    .hero img {
+        width: 7rem;
+    }
+
+    /* Stack about section vertically on tablet */
+    .about {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 50px;
+        gap: 10px;
+        padding: 0 24px;
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+        font-size: 1.15rem;
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    hr {
+        width: 90%;
+        margin-top: 2.5rem;
+    }
+
+    .tutorial-container {
+        width: 95%;
+        margin-left: 0;
+        margin: 2rem auto;
+        gap: 40px 60px;
+        justify-content: center;
+    }
+
+    .tutorial {
+        width: 45%;
+        font-size: 1.2rem;
+    }
+
+    #let {
+        font-size: 48px;
+    }
+
+    #select {
+        font-size: 1.5rem;
+    }
+
+    .distro-container {
+        gap: 40px;
+        margin-top: 6vw;
+    }
+
+    .distro-card {
+        width: 290px;
+        height: 250px;
+        font-size: 1.9rem;
+    }
+
+    .distro-card img {
+        width: 180px;
+    }
 }
 
-.fedora{
-    background-color: #9ecbf5;
+
+/* ══════════════════════════════════════
+   MOBILE  (up to 767px)
+══════════════════════════════════════ */
+@media screen and (max-width: 767px) {
+    body {
+        padding-top: 50px;
+    }
+
+    #learn {
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        padding: 0 12px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        padding: 0 12px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 30px 16px;
+        gap: 8px;
+    }
+
+    .hero img {
+        width: 5.5rem;
+        margin-top: 4%;
+    }
+
+    /* Stack about section vertically */
+    .about {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 36px;
+        gap: 12px;
+        padding: 0 16px;
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+        line-height: 1.65;
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    hr {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    /* Stack tutorials in a single column */
+    .tutorial-container {
+        width: 90%;
+        margin: 1.5rem auto 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .tutorial {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    #let {
+        font-size: 36px;
+        margin-top: 4%;
+    }
+
+    #select {
+        font-size: 1.2rem;
+        margin-top: 3%;
+        padding: 0 12px;
+    }
+
+    .distro-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 8vw;
+        padding: 10px 16px;
+    }
+
+    .distro-card {
+        width: 85vw;
+        max-width: 340px;
+        height: 240px;
+        font-size: 1.7rem;
+    }
+
+    .distro-card img {
+        width: 160px;
+    }
 }
 
-@media (max-width:1024px) {
-    .distro-container{
-        flex-direction: row;
-        gap: 2vw;
+
+/* ══════════════════════════════════════
+   SMALL MOBILE  (up to 400px)
+══════════════════════════════════════ */
+@media screen and (max-width: 400px) {
+    #learn {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 0.95rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .hero img {
+        width: 4.5rem;
+    }
+
+    .left {
+        font-size: 2rem;
+    }
+
+    .right {
+        font-size: 0.9rem;
+    }
+
+    #let {
+        font-size: 30px;
+    }
+
+    #select {
+        font-size: 1rem;
+    }
+
+    .distro-card {
+        width: 92vw;
+        height: 220px;
+        font-size: 1.5rem;
+    }
+
+    .distro-card img {
+        width: 130px;
+    }
+
+    .tutorial {
+        font-size: 1rem;
     }
 }
