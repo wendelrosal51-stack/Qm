@@ -1,5 +1,8 @@
 [phases.install]
 cmds = ["npm install --prefix back-end"]
 
+[phases.build]
+cmds = []
+
 [start]
 cmd = "node back-end/server.js"
