@@ -3,7 +3,7 @@
   <head>
     <title>About Us | LearNux</title>
     <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="site-pages.css" />
+    <link rel="stylesheet" href="about.css" />
     <link rel="icon" type="image/png" href="assets/logo.png" />
   </head>
 
@@ -38,40 +38,45 @@
       </div>
     </nav>
 
-    <main class="content-shell">
-      <section class="page-hero">
-        <p class="eyebrow">About the project</p>
-        <h1>Meet the LearNux developers</h1>
-        <p>This page introduces the people who planned, designed, and built the website.</p>
-      </section>
+    <div class="head">
+      <p id="mainheaders">Meet the LearNux Developers</p>
+      <p id="subheaders">These are the people who planned, designed, and built the website.</p>
+    </div>
+    <hr />
 
-      <section class="team-grid">
-        <article>
-          <img src="assets/profile.png" alt="" />
-          <h2>Developer Name</h2>
-          <p>Planning, research, and learning content.</p>
-        </article>
-        <article>
-          <img src="assets/profile.png" alt="" />
-          <h2>Developer Name</h2>
-          <p>Frontend layout, styling, and page structure.</p>
-        </article>
-        <article>
-          <img src="assets/profile.png" alt="" />
-          <h2>Developer Name</h2>
-          <p>Backend, account flow, progress, and admin tools.</p>
-        </article>
-      </section>
+    <div class="devContainer">
+      <div class="devs">
+        <div class="left-side">
+          <img src="assets/lance.png" alt="" />
+        </div>
+        <div class="right-side">
+          <p id="name">Resurrecion, Lance</p>
+          <div class="contributions">
+            <p>UI/UX Design Implementation</p>
+            <p>Frontend Development</p>
+            <p>Backend Development</p>
+            <p>Database Implementation</p>
+            <p>Website Documentation</p>
+          </div>
+        </div>
+      </div>
 
-      <section class="summary-band">
-        <h2>Project purpose</h2>
-        <p>
-          LearNux helps beginners learn Linux through guided modules, visual steps,
-          quizzes, saved progress, and feedback that admins can review.
-        </p>
-      </section>
-    </main>
-
+      <div class="devs">
+        <div class="right-side">
+          <p id="name">Rosal, Kurt Wendel</p>
+          <div class="contributions">
+            <p>UI/UX Design Implementation</p>
+            <p>Frontend Development</p>
+            <p>Backend Development</p>
+            <p>Database Implementation</p>
+            <p>Website Documentation</p>
+          </div>
+        </div>
+        <div class="left-side">
+          <img src="assets/kurt.png" alt="" />
+        </div>
+      </div>
+    </div>
     <script src="home.js"></script>
   </body>
 </html>

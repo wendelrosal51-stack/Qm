@@ -561,15 +561,42 @@
     "distro": "Fedora",
     "title": "Basic Navigation",
     "icon": "assets/features.png",
-    "summary": "test",
+    "summary": "Learn the essential Fedora Linux terminal commands for navigating directories, managing files, and exploring the system.",
     "objectives": [],
     "lessons": [
       {
         "id": 1,
-        "title": "test",
+        "title": "Navigating the Fedora File System",
         "steps": [
           {
-            "text": "test"
+            "text": "Open Terminal/Konsole by searching in applications menu.",
+            "media": "assets/fedora-nav-lesson1.1.mp4",
+            "type": "video"
+          },
+          {
+            "text": "The \"pwd\" command displays your current directory location.",
+            "media": "assets/fedora-nav-lesson1.2.mp4",
+            "type": "video"
+          },
+          {
+            "text": "\"ls\" command displays files and folders in your current directory.",
+            "media": "assets/fedora-nav-lesson1.3.mp4",
+            "type": "video"
+          },
+          {
+            "text": "To change your directory, type \"cd directoryName\".",
+            "media": "assets/fedora-nav-lesson1.4.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Type \"cd ..\" to go back to the previous directory.",
+            "media": "assets/fedora-nav-lesson1.5.mp4",
+            "type": "video"
+          },
+          {
+            "text": "Go back to your home directory using \"cd ~\".",
+            "media": "assets/fedora-nav-lesson1.6.mp4",
+            "type": "video"
           }
         ]
       }
@@ -591,15 +618,37 @@
     "distro": "Fedora",
     "title": "Terminal Commands",
     "icon": "assets/command.png",
-    "summary": "test",
+    "summary": "Master essential Fedora terminal commands to efficiently control files, directories, and system operations.",
     "objectives": [],
     "lessons": [
       {
         "id": 1,
-        "title": "test",
+        "title": "File Searching and Command Assistance",
         "steps": [
           {
-            "text": "test"
+            "text": "Open Terminal/Konsole by searching in applications menu.",
+            "media":"assets/fedora-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Search for files and directories using \"find ~ -name \"fileName.txt\"\".",
+            "media":"assets/fedora-terminal-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Locate a Command using \"which commandName\".",
+            "media":"assets/fedora-terminal-lesson1.2.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Open a Manual Page using \"man ls\".",
+            "media":"assets/fedora-terminal-lesson1.4.mp4",
+            "type":"video"
+          },
+          {
+            "text": "The terminal displays available options and explanations for the \"l --help\" command.",
+            "media":"assets/fedora-terminal-lesson1.5.mp4",
+            "type":"video"
           }
         ]
       }
@@ -621,26 +670,32 @@
     "distro": "Fedora",
     "title": "App Installation",
     "icon": "assets/apps.png",
-    "summary": "Test",
+    "summary": "Learn how to install, manage, and remove applications in Fedora Linux using essential tools like DNF, Flatpak, and RPM",
     "objectives": [],
     "lessons": [
       {
         "id": 1,
-        "title": "Download Linux Fedora ISO file.",
+        "title": "Installing Applications Using DNF (Fedora Package Manager).",
         "steps": [
           {
-            "text": "Go to \"https://fedoraproject.org/\"",
-            "media": "assets/fedora-install-lesson1.1.mp4",
+            "text": "Open Terminal/Konsole by searching in applications menu.",
+            "media":"assets/fedora-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Before installing, search for a package by typing \"dnf search appName\".",
+            "media": "assets/fedora-apps-lesson1.1.mp4",
             "type": "video"
           },
           {
-            "text": "Scroll down to see the Fedora Editions, Choose \"Fedora KDE Plasma for Desktop\" for a much user-friendly Fedora environment, click \"Download Now\"",
-            "media": "assets/fedora-install-lesson1.2.mp4",
-            "type": "video"
+            "text": "To install the package, type in \"sudo dnf install appName -y\".",
+            "media": "assets/fedora-apps-lesson1.2.mp4",
+            "type": "video",
+            "warning":"sudo gives admin permission, -y automatically confirms installation"
           },
           {
-            "text": "In the Download page, click the download button for \"Intel and AMD x86_64 systems\" ISO file.",
-            "media": "assets/fedora-install-lesson1.3.mp4",
+            "text": "Uninstall the package by typing \"sudo dnf remove appName -y\".",
+            "media": "assets/fedora-apps-lesson1.3.mp4",
             "type": "video"
           }
         ]
@@ -663,15 +718,37 @@
     "distro": "Fedora",
     "title": "Troubleshooting",
     "icon": "assets/trouble.png",
-    "summary": "test",
+    "summary": "Identify, diagnose, and resolve common Fedora Linux issues using essential troubleshooting commands and system tools",
     "objectives": [],
     "lessons": [
       {
         "id": 1,
-        "title": "test",
+        "title": "Checking System Status",
         "steps": [
           {
-            "text": "test"
+            "text": "Open Terminal/Konsole by searching in applications menu.",
+            "media":"assets/fedora-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Check System Uptime and Load using \"uptime\".",
+            "media": "assets/fedora-trouble-lesson1.1.mp4",
+            "type": "video"
+          },
+          {
+            "text": "To check memory usage, type \"free -h\".",
+            "media": "assets/fedora-trouble-lesson1.2.mp4",
+            "type": "video"
+          },
+          {
+            "text": "You can also check available system disk space, type \"df -h\".",
+            "media": "assets/fedora-trouble-lesson1.3.mp4",
+            "type": "video"
+          },
+          {
+            "text": "To view if there are critical system errors, use \"journalctl -p 3 -xb\".",
+            "media": "assets/fedora-trouble-lesson1.4.mp4",
+            "type": "video"
           }
         ]
       }
