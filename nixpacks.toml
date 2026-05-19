@@ -8,4 +8,4 @@ cmds = ["npm install --prefix back-end"]
 cmds = ["echo done"]
 
 [start]
-cmd = "cd /app && node back-end/server.js"
+cmd = "node back-end/server.js"
