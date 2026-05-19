@@ -324,15 +324,25 @@
             "type":"video"
           },
           {
-            "text": "Type \"hostnamectl\" and press Enter to view hostname and OS information.",
-            "media":"assets/mint-terminal-lesson1.2.mp4",
+            "text": "\"traceroute websiteName.com\" shows the path packets take to reach a destination.",
+            "media":"assets/mint-terminal-lesson2.2.mp4",
             "type":"video"
           },
           {
-            "text": "Type \"df -h\" and press Enter to display disk space.",
-            "media":"assets/mint-terminal-lesson1.3.mp4",
+            "text": "The \"ifconfig\" command displays network interface information.",
+            "media":"assets/mint-terminal-lesson2.3.mp4",
             "type":"video"
-          }
+          },
+          {
+            "text": "The \"ip\" command is the modern replacement with more features. ip addr show to display IP addresses of all interfaces, ip route show to display the routing table and ip link show to display link layer information.",
+            "media":"assets/mint-terminal-lesson2.4.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Type \"top\" and press Enter to display real-time system statistics (press q to quit)..",
+            "media":"assets/mint-terminal-lesson2.5.mp4",
+            "type":"video"
+          } 
         ]
       }
     ],
@@ -358,10 +368,46 @@
     "lessons": [
       {
         "id": 1,
-        "title": "test",
+        "title": "Package Management Basics and APT Commands",
         "steps": [
           {
-            "text": "test"
+            "text": "Linux Mint uses the APT (Advanced Package Tool) package manager to install, update, and remove software. APT manages software packages from repositories. A repository is a remote server that stores software packages.",
+            "command":"sudo apt"
+          },
+          {
+            "text": "Open the Terminal by searching \"Terminal\" in the Application Menu.",
+            "media":"assets/mint-nav-lesson1.1.mp4",
+            "type":"video"
+          },
+          {
+            "text": "To find packages before installing them, use the \"apt search\" command.",
+            "media":"assets/mint-apps-lesson1.2.mp4",
+            "type":"video"
+          },
+          {
+            "text": "To get detailed information about a package before installing it, use \"apt show\".",
+            "media":"assets/mint-apps-lesson1.3.mp4",
+            "type":"video"
+          },
+          {
+            "text": "To install a package, use the \"sudo apt install appName\" command.",
+            "media":"assets/mint-apps-lesson1.4.mp4",
+            "type":"video"
+          },
+          {
+            "text": "To view installed packages on your system, use \"apt list\" command.",
+            "media":"assets/mint-apps-lesson1.5.mp4",
+            "type":"video"
+          },
+          {
+            "text": "Type \"apt list --upgradable\" and press Enter to see packages that can be upgraded.",
+            "media":"assets/mint-apps-lesson1.6.mp4",
+            "type":"video"
+          },
+          {
+            "text": "To update installed packages to their latest versions, use \"sudo apt upgrade\".",
+            "media":"assets/mint-apps-lesson1.7.mp4",
+            "type":"video"
           }
         ]
       }
