@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const customModulesPath = path.join(__dirname, 'data/custom-modules.json');
 
-app.use(express.static(path.join(__dirname, '../front-end')));
+app.use(express.static(path.join(__dirname, '..', 'front-end')));
 app.use(express.json());
 
 app.use(session({
@@ -244,19 +244,20 @@ function requireAdmin(req, res, next) {
 }
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../front-end/login.html'));
+    res.sendFile(path.join(__dirname, '..', 'front-end', 'login.html'));
 });
 
 app.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname, '../front-end/signup.html'));
+    res.sendFile(path.join(__dirname, '..', 'front-end', 'signup.html'));
 });
 
+
 app.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, '../front-end/home.html'));
+    res.sendFile(path.join(__dirname, '..', 'front-end', 'home.html'));
 });
 
 app.get('/admin', requireAdmin, (req, res) => {
-    res.sendFile(path.join(__dirname, '../front-end/admin.html'));
+    res.sendFile(path.join(__dirname, '..', 'front-end', 'admin.html'));
 });
 
 app.get('/api/tutorials/ubuntu', requireLogin, (req, res) => {
