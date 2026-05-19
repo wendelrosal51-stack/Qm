@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 const frontEndPath = path.join(__dirname, '..', 'front-end');
 const customModulesPath = path.join(__dirname, 'data/custom-modules.json');
 
-app.use(express.static(path.join(__dirname, '..', 'front-end')));
+// app.use(express.static(path.join(__dirname, '..', 'front-end')));
 app.use(express.json());
 
 app.use(session({
@@ -260,23 +260,6 @@ app.get('/home', (req, res) => {
 
 app.get('/admin', requireAdmin, (req, res) => {
     res.sendFile(path.join(frontEndPath, 'admin.html'));
-});
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'front-end', 'login.html'));
-});
-
-app.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'front-end', 'signup.html'));
-});
-
-
-app.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'front-end', 'home.html'));
-});
-
-app.get('/admin', requireAdmin, (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'front-end', 'admin.html'));
 });
 
 app.get('/api/tutorials/ubuntu', requireLogin, (req, res) => {
